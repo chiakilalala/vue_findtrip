@@ -1,0 +1,429 @@
+/* index.html */
+
+body {
+    font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
+    font-family: 'ヒラギノ丸ゴ W6 JIS2004', 'ヒラギノ丸ゴ Std W6', 'Hiragino Maru Gothic Std W6', sans-serif;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #1983d4 0%, #53e8f3 100%);
+}
+
+.gradient-blue {
+    background: linear-gradient(90deg, #0a65c2 0%, #BEE3F8 100%);
+}
+
+
+/* banner */
+
+.hero {
+    background: url('../img/hero_bg001.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero .logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* product.page */
+
+.bg-blue-prod {
+    background-color: #2799BD;
+}
+
+
+/* banner 畫面 */
+
+.hero-bg {
+    padding-bottom: 0%;
+    background: url(../img/bg002.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.h-112 {
+    height: 23rem;
+}
+
+@media (max-width: 640px) {
+    .hero-bg {
+        padding-bottom: 0%;
+        background: url(../img/bg002_mobile.png) center center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/* style="background-image: url(./img/bg001.png);" */
+
+.airplane {
+    height: 200px;
+    display: block;
+}
+
+.airplane img {
+    width: 350px;
+    max-width: 250px;
+    top: 50%;
+    z-index: 50;
+    left: 57%;
+}
+
+
+/* 副標題 */
+
+.heading-sub:after,
+.heading-sub:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.heading-sub:before {
+    left: 42%
+}
+
+.round-xll {
+    border-radius: 40px;
+}
+
+.arrow-step:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    margin-right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #FDE94C;
+    z-index: 2;
+}
+
+@media screen and (min-width: 640px) {
+    .arrow-step::after {
+        bottom: 51%;
+        right: -9px;
+        margin-bottom: -25px;
+        margin-right: 0;
+        border-left-color: #FDE94C;
+        border-bottom-width: 20px;
+        border-right-width: 0;
+        border-top-color: transparent;
+    }
+}
+
+.wave {
+    position: absolute;
+    height: 205px;
+    width: 100%;
+    /* background: #2c3e50; */
+    bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.wave::before {
+    width: 45%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+}
+
+.wave::after {
+    width: 55%;
+    height: 100%;
+    /* background-color: #2c3e50; */
+    left: -1.5%;
+    top: 40%;
+}
+
+svg#data-bg-top,
+svg#life-bg-bottom {
+    width: 100%;
+    height: 100%;
+    fill: #F2F7FF;
+}
+
+#life-bg-bottom {
+    margin-bottom: 44px;
+    height: 210px;
+}
+
+
+/*熱門推薦*/
+
+.bg-chiaki-blue {
+    background-color: #F2F7FF;
+}
+
+.people {
+    justify-content: flex-end;
+    top: -32px;
+    margin-right: 10px;
+}
+
+.star {
+    font-size: 0.3em;
+}
+
+.fa-coins {
+    background: url(../img/coin.png) no-repeat;
+    width: 27px;
+    height: 27px;
+    font-size: 0;
+    /* display: block; */
+    background-size: cover;
+}
+
+
+/* ::selection {
+    background-color: salmon;
+    color: white;
+} */
+
+.parallax>use {
+    animation: move-forever 12s linear infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -2s;
+    animation-duration: 5s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+.editorial {
+    display: block;
+    width: 100%;
+    height: 10em;
+    max-height: 100vh;
+    margin: 0;
+}
+
+
+/*footer*/
+
+.bg-blue-sea {
+    background-color: #0a65c2;
+}
+
+#boat {
+    -moz-animation: boat-animation 3s ease-in-out infinite alternate;
+    -webkit-animation: boat-animation 3s ease-in-out infinite alternate;
+    animation: boat-animation 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes boat-animation {
+    0% {
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    100% {
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}
+
+@-moz-keyframes boat-animation {
+    0% {
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    100% {
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}
+
+@-o-keyframes boat-animation {
+    0% {
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    100% {
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes boat-animation {
+    0% {
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    100% {
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}
+
+.search-box {
+    position: relative;
+    top: -121px;
+    height: 13rem;
+    margin-bottom: -126px;
+    margin: 0 auto;
+    margin-top: -79px;
+}
+
+.search-box_inner:before {
+    content: '';
+    background-image: url(../img/map_bg.png);
+    background-size: cover;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 24%;
+    width: 80%;
+    height: 80%;
+}
+
+.select-arrow {
+    transform: translate(-16px, 17px);
+}
+
+.filter-arrow {
+    left: 8%;
+}
+
+.tap_wrap button,
+.people_wrap button {
+    padding: 5px 20px;
+    /* background: #b1b7b1; */
+    border-radius: 20px;
+    color: whte;
+    color: white;
+    margin-right: .75rem;
+    margin: 0 .75rem 0 7px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.people_wrap button {
+    margin: 11px 0.25rem 0 6px;
+    padding: 3px 18px;
+    font-size: 1rem;
+}
+
+.barcode {
+    position: relative;
+    top: 34px;
+    transform: rotate(270deg);
+}
+
+.barcode span {
+    display: none;
+}
+
+.ticket:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 205px;
+    left: 22%;
+    border: 1px dashed #e1d5d5;
+}
+
+.icon {
+    display: block;
+    width: 54px;
+    height: 54px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: #fff url('../img/peope_icon.png') 0 0 no-repeat;
+}
+
+.icon001 {
+    background-position: -10px -5px;
+}
+
+.icon002 {
+    background-position: -64px -4px;
+}
+
+.icon003 {
+    background-position: -8px -58px;
+}
+
+.icon004 {
+    background-position: -65px -64px;
+}
+
+@media screen and (max-width: 768px) {
+    .barcode {
+        width: 58%;
+        padding: 11px 0;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        top: 0;
+    }
+    .ticket:before {
+        display: none;
+    }
+    .search-box {
+        height: 19rem;
+    }
+    .tap_wrap button {
+        margin-top: 17px;
+    }
+    .filter-arrow {
+        left: 0%;
+    }
+    .people_wrap button {
+        margin: 11px 0.25rem 0 5px;
+        padding: 5px 18px;
+    }
+}
