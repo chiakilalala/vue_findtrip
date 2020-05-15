@@ -17,13 +17,13 @@
     <title>Find Trip</title>
 </head>
 
-<body class="tracking-normal text-white ">
+<body class="tracking-normal  ">
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <nav id="header" class=" w-full z-30 top-0 text-white">
         <div class="w-full container mx-auto flex flex-wrap max-w-6xl items-center justify-between mt-0 py-2">
 
             <div class="pl-4 flex items-center">
-                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">Logo
+                <a class="toggleColour text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">Logo
         </a>
 
 
@@ -49,12 +49,32 @@
                     </li>
 
                 </ul>
-                <button id="navAction" class="outline-none mx-auto lg:mx-0 hover:shadow-lg bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75"><i
+                <button id="navAction" class="hidden outline-none mx-auto lg:mx-0 hover:shadow-lg bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75"><i
             class="fas fa-user-astronaut"></i>登入</button>
+                <!-- 登入化緣狀態 -->
+                <div class="flex items-center text-black-500">
+
+                    <span class="mr-3 fas fa-bell text-2xl" style=""></span>
+                    <div class="shadow bg-center bg-cover  bg-white bg-no-repeat rounded-full inline-block h-12 w-12 ml-2" style="background-image: url(./img/man001.svg)"></div>
+                </div>
             </div>
         </div>
     </nav>
+    <!-- 麵包屑 -->
+    <div class=" my-2 lg:ml-10 ml-2">
+        <div class="flex max-w-6xl mx-auto ">
+            <div class=" py-2  lg:px-0 px-2 text-gray-600 text-sm">
+                <ul class="list-inline inline-flex hover:underlines">
+                    <li class=""><i class="fa fa-home"> /</i>
+                    </li>
 
+                    <li>會員專區</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
     <!-- banner -->
     <div class="hero h-64 bg-cover h-112  overflow-hidden ">
         <div class="container mx-auto flex max-w-5xl  flex-col items-center">
@@ -64,24 +84,55 @@
     </div>
 
 
-    <div class=" my-2 lg:ml-10 ml-2">
-        <div class="flex max-w-6xl mx-auto ">
-            <div class=" py-2  lg:px-0 px-2 text-gray-600 text-sm">
-                <ul class="list-inline inline-flex hover:underlines">
-                    <li class=""><i class="fa fa-home"> /</i>
-                    </li>
-                    <li>旅行規劃師 /</li>
-                    <li>名字 個人資訊</li>
 
-                </ul>
-            </div>
-        </div>
-
-    </div>
 
     <div class="">
         <div class="flex container  max-w-6xl  mx-auto">
             <div class="w-full  flex flex-row flex-wrap justify-center">
+                <div class="w-full lg:w-1/5 lg:px-6 text-xl text-gray-800 leading-normal">
+                    <!-- <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">Menu</p> -->
+                    <div class="block lg:hidden sticky inset-0">
+                        <button id="menu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-purple-500 appearance-none focus:outline-none">
+                      <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                      </svg>
+                   </button>
+                    </div>
+                    <div class="w-full sticky inset-0 hidden h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;" id="menu-content">
+                        <ul class="list-reset">
+                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:border-purple-500 lg:hover:border-purple-500">
+                                    <span class="pb-1 md:pb-0 text-base text-gray-900 font-bold"><i class="pr-3 fas fa-cog"> </i>帳戶設定</span>
+                                </a>
+                            </li>
+                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="pr-3 far fa-money"> </i>儲值點數</span>
+                                </a>
+                            </li>
+                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="pr-3 far fa-list-alt"> </i>訂單記錄</span>
+                                </a>
+                            </li>
+                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="pr-3 far fa-comment"> </i>訊息記錄</span>
+                                </a>
+                            </li>
+                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="pr-3 far fa-clipboard"> </i>旅行計劃</span>
+                                </a>
+                            </li>
+                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="pr-3 far fa-heart"> </i>我的收藏</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="w-full md:w-3/4 lg:w-3/5">
                     <div class="py-2 ">
                         <div class="flex rounded-lg bg-white shadow-sm -my-2">
@@ -89,7 +140,7 @@
                             <div class="  max-w-3xl    px-8 lg:px10">
                                 <div class="flex items-center text-xs my-5">
                                     <div class="icon icon001"></div>
-                                    <h3 class="text-xl text-blue-500 font-medium ">簡介</h3>
+                                    <h3 class="text-xl text-blue-400 font-medium ">簡介</h3>
                                 </div>
                                 <div class="">
                                     <ul class=" list-inside font-base text-gray-600 leading-5 ml-1">
@@ -105,7 +156,7 @@
                                 <!-- step2 -->
                                 <div class="flex items-center text-xs my-5">
                                     <div class="icon icon002"></div>
-                                    <h3 class="text-xl text-blue-500 font-medium ">經歷</h3>
+                                    <h3 class="text-xl text-blue-400 font-medium ">經歷</h3>
                                 </div>
 
                                 <p class=" font-base text-gray-700 leading-6 ml-1">
@@ -115,7 +166,7 @@
 
                                 <div class="flex items-center text-xs my-5">
                                     <div class="icon icon003"></div>
-                                    <h3 class="text-xl text-blue-500 font-medium ">專長</h3>
+                                    <h3 class="text-xl text-blue-400 font-medium ">專長</h3>
                                 </div>
                                 <div class="px-2">
                                     <div class="flex flex-wrap -mx-3 ml-1">
@@ -123,8 +174,8 @@
                                         </div>
 
                                         <div class="w-full lg:w-1/2 px-0 lg:px-4 flex flex-col justify-between">
-                                            <h3 class="text-xl text-blue-500 font-medium my-2  px:0 lg:px-2"> 國家：<span class="text-gray-500 text-base font-mono"> 日本</span></h3>
-                                            <h3 class="text-xl text-blue-500 font-medium my-2 px:0 lg:px-2"> 區域：<span class="text-gray-500 text-base font-mono"> 大阪 神戶 京都 名古屋</span></h3>
+                                            <h3 class="text-xl text-blue-400 font-medium my-2  px:0 lg:px-2"> 國家：<span class="text-gray-500 text-base font-mono"> 日本</span></h3>
+                                            <h3 class="text-xl text-blue-400 font-medium my-2 px:0 lg:px-2"> 區域：<span class="text-gray-500 text-base font-mono"> 大阪 神戶 京都 名古屋</span></h3>
                                             <div class="people_wrap mt-6 lg:mt-4 flex flex-wrap leading-sm inline-flex items-center">
                                                 <button class="bg-blue-500">
                           冒險</button><button class="bg-blue-500">景點</button><button class="bg-blue-500">文化</button><button class="bg-blue-600">吃貨</button>
@@ -138,7 +189,7 @@
                                 <hr class="border-grey-light border-t my-6">
                                 <div class="flex items-center text-xs my-5">
                                     <div class="icon icon004"></div>
-                                    <h3 class="text-xl text-blue-500 font-medium ">旅行家評價</h3>
+                                    <h3 class="text-xl text-blue-400 font-medium ">旅行家評價</h3>
                                 </div>
                                 <div class="mb-8 px-2">
                                     <div class="flex flex-wrap -mx-3">
@@ -207,70 +258,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-1/4 lg:w-2/5   text-gray-600 mt-6">
-                    <div class="px-2">
-                        <div class=" bg-white  -mx-2">
-                            <div class=" px-10">
-                                <div class=" mb-5 border  rounded-lg shadow-lg px-5">
-                                    <h2 class="text-center font-semibold text-gray-700 text-xl  text-blue-500 mt-10 my-5">關於規劃師 Jack Smith
-                                    </h2>
 
-                                    <div class="mx-auto  relative flex justify-center">
-                                        <img src="./img/user001.png" alt="" srcset="" class="bg-blue-500 p-2 w-48 h-48 object-contain    rounded-full overflow-hidden">
-
-                                    </div>
-                                    <div class="mx-auto   flex justify-center my-5">
-                                        <img src="./img/ic-facebook.svg" alt="" srcset="" class="w-6 b-6 mr-3"> <img class="w-6 b-6" src="./img/ic-line@.svg" alt="" srcset="">
-                                    </div>
-                                    <div class="  flex justify-center my-3">
-                                        <p class="text-sm pr-2"> 評價</p>
-                                        <span class="star  text-xl ">
-                      <i class="fa fa-star text-orange-500"></i>
-                      <i class="fa fa-star text-orange-500"></i>
-                      <i class="fa fa-star text-orange-500"></i>
-                      <i class="fa fa-star text-orange-500"></i>
-                      <i class="fa fa-star text-orange-500"></i></span>
-                                    </div>
-                                    <p class="font-normal mb-3 text-sm  leading-6 px-12">熱愛旅遊，認為「工作要拼，玩樂也要對得起自己」。 在馬來西亞居住超過十年，目前去過十多個國家，於印度、尼泊爾、土耳其深度旅遊超過一個月，並曾經爬上喜馬拉雅山基地營。
-                                    </p>
-                                    <div class="px-12">
-                                        <h2 class="font-semibold text-gray-700 text-xl mb-3">服務售價</h2>
-                                    </div>
-                                    <div class="flex  px-10 justify-start mb-10">
-                                        <img src="./img/coin.png" alt="" class="w-12 h-12 mr-2">
-                                        <span class="text-3xl text-gray-700  font-extrabold">300 </span>
-                                        <span class="ml-1 text-sm text-gray-700  font-semibold transform translate-y-4">Point </span>
-                                    </div>
-
-                                    <div class="flex px-12">
-                                        <button class="bg-blue-500 hover:bg-blue-700 text-white rounded-lg mt-3 w-full
-        py-2 font-medium text-lg tracking-wider shadow font-huninn focus:outline-none
-        select-none">
-                      聯絡諮詢
-                    </button>
-                                    </div>
-                                    <div class="flex mb-20 px-12 mt-4">
-
-                                        <button class="bg-orange-500 hover:bg-orange-700 text-white rounded-lg mt-3 w-full
-        py-2 font-medium text-lg tracking-wider shadow font-huninn focus:outline-none
-        select-none">
-                      立即下單
-                    </button>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
 
     </div>
 
-    </div>
+
 
 
 
@@ -302,17 +296,17 @@
       </g>
     </svg>
     </div>
-    <footer class="bg-blue-sea">
+    <footer class="bg-blue-sea ">
 
 
         <div class="container mx-auto px-6 pt-10 pb-6">
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class="uppercase mb-6 font-bold text-3xl">LOGO</h5>
+                    <h5 class="uppercase mb-6 font-bold text-3xl text-white">LOGO</h5>
 
                 </div>
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class=" mb-6 font-bold text-md">服務須知</h5>
+                    <h5 class=" mb-6 font-bold text-md text-white">服務須知</h5>
                     <ul class="mb-4">
                         <li class="mt-2">
                             <a href="#" class=" text-gray-200 text-sm ">常見問題</a>
@@ -323,7 +317,7 @@
                     </ul>
                 </div>
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class=" mb-6 font-bold text-md">給旅行家</h5>
+                    <h5 class=" mb-6 font-bold text-md text-white">給旅行家</h5>
                     <ul class="mb-4">
                         <li class="mt-2">
                             <a href="#" class=" text-gray-200 text-sm ">關於尋旅</a>
@@ -340,7 +334,7 @@
                     </ul>
                 </div>
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class=" mb-6 font-bold text-md">合作夥伴</h5>
+                    <h5 class=" mb-6 font-bold text-md text-white">合作夥伴</h5>
                     <ul class="mb-4">
                         <li class="mt-2">
                             <a href="#" class=" text-gray-200 text-sm ">部落客/攝影師合作計畫</a>
@@ -356,8 +350,12 @@
             </div>
         </div>
     </footer>
+    <!-- top -->
+    <div class="e-backtop-btn js-e-backtop-btn"> <i class="fas fa-arrow-up"></i><span>TOP </span></div>
 </body>
-<script>
+<script src="js/jquery-3.4.1.js">
+</script>
+<script src="js/all.js">
 </script>
 
 </html>
