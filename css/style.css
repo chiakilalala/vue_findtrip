@@ -99,6 +99,10 @@ body {
     background: linear-gradient(90deg, #0a65c2 0%, #BEE3F8 100%);
 }
 
+.bg-member {
+    background-color: #F6F2F7;
+}
+
 
 /* banner */
 
@@ -111,6 +115,13 @@ body {
 
 .hero .logo {
     font-family: 'Montserrat', sans-serif;
+}
+
+.hero-member {
+    background: url('../img/Bg_user.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 
