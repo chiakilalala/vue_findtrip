@@ -29,7 +29,7 @@ $(document).ready(function() {
     backtopBtn.on('click', function() {
         $('html,body').animate({ scrollTop: 0 }, 'slow')
         return false
-    })
+    });
     $(window).scroll(function() {
             if ($(this).scrollTop() > 400) {
                 backtopBtn.fadeIn()
@@ -38,4 +38,33 @@ $(document).ready(function() {
             }
         })
         // 至頂按鈕 end
-})
+});
+var helpMenuDiv = document.getElementById("menu-content");
+var helpMenu = document.getElementById("menu-toggle");
+
+document.onclick = check;
+//Help Menu
+function check(e) {
+    var target = (e && e.target) || (event && event.srcElement);
+    if (!checkParent(target, helpMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, helpMenu)) {
+            // click on the link
+            if (helpMenuDiv.classList.contains("hidden")) {
+                helpMenuDiv.classList.remove("hidden");
+            } else { helpMenuDiv.classList.add("hidden"); }
+        } else {
+            // click both outside link and outside menu, hide menu
+            helpMenuDiv.classList.add("hidden");
+        }
+    }
+
+}
+
+function checkParent(t, elm) {
+    while (t.parentNode) {
+        if (t == elm) { return true; }
+        t = t.parentNode;
+    }
+    return false;
+}

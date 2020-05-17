@@ -8,7 +8,8 @@
     <meta name="keywords" content="Find Trip">
     <meta name="author" content="Find Trip">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./output.css">
     <link href="css/style.css?12" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <style>
@@ -24,19 +25,19 @@
 
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">Logo
-        </a>
+                </a>
 
 
             </div>
 
             <div class="block lg:hidden pr-4">
                 <!-- mobile -->
-                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 hover:text-blue-100 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
             </div>
             <!-- desktop -->
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
@@ -50,7 +51,7 @@
 
                 </ul>
                 <button id="navAction" class="hidden outline-none mx-auto lg:mx-0 hover:shadow-lg bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75"><i
-            class="fas fa-user-astronaut"></i>登入</button>
+                        class="fas fa-user-astronaut"></i>登入</button>
                 <!-- 登入化緣狀態 -->
                 <div class="flex items-center text-black-500">
 
@@ -62,59 +63,107 @@
     </nav>
 
     <!-- banner -->
-    <div class="hero-member  h-64 bg-cover  overflow-hidden ">
-        <div class="container mx-auto flex max-w-5xl  flex-col items-center">
+    <div class="hero-member  h-10 lg:h-64 bg-cover  overflow-hidden ">
 
+    </div>
+    <!--  -->
+
+    <div class=" flex container  max-w-6xl  mx-auto member flex flex-wrap p-8  items-center  justify-around">
+
+        <div class="w-full lg:w-1/5 flex-1 ">
+            <div class=" w-40 h-40 rounded-full overflow-hidden flex-shrink-0 mx-auto sm:m-0 bg-blue-100">
+                <img src="./img/man001.svg" class="w-40 h-40 p-5" alt="">
+            </div>
+        </div>
+        <div class="w-full lg:w-4/5">
+            <div class="sm:pl-10 sm:pt-4 flex-1 lg:text-white text-gray-800">
+                <div class="flex sm:justify-between sm:flex-row sm:flex-no-wrap justify-center flex-wrap lg:mb-6 mb-0">
+                    <div class="flex flex-wrap md:w-auto w-full mb-0 ">
+                        <h2 class="lg:text-white text-2xl w-full mb-3 text-center sm:text-left mt-4 sm:mt-0 ">Chiakilalala
+                        </h2>
+                        <div class="flex sm:w-auto sm:mt-0 lg:mt-4 sm:mb-0 mb-3 w-full sm:justify-start justify-center items-center">
+                            <a href="#" class="lg:text-white text-blue-500 mr-3 hover:text-blue-500">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.124 96.123">
+                                    <path
+                                        d="M72.089.02L59.624 0C45.62 0 36.57 9.285 36.57 23.656v10.907H24.037c-1.083 0-1.96.878-1.96 1.961v15.803c0 1.083.878 1.96 1.96 1.96H36.57v39.876c0 1.083.877 1.96 1.96 1.96h16.352c1.083 0 1.96-.878 1.96-1.96V54.287h14.654c1.083 0 1.96-.877 1.96-1.96l.006-15.803c0-.52-.207-1.018-.574-1.386-.367-.368-.867-.575-1.387-.575H56.842v-9.246c0-4.444 1.059-6.7 6.848-6.7l8.397-.003c1.082 0 1.959-.878 1.959-1.96V1.98c0-1.081-.876-1.958-1.957-1.96z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="lg:text-white text-blue-500 mr-3 hover:text-blue-500">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+                                    <path
+                                        d="M612 116.258c-22.525 9.981-46.694 16.75-72.088 19.772 25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.551 56.217-125.551 125.513 0 9.828 1.109 19.427 3.251 28.606-104.326-5.24-196.835-55.223-258.75-131.174-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.479-20.575-.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.291 111.554 100.693 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.199 117.253 87.194-42.947 33.654-97.099 53.655-155.916 53.655-10.134 0-20.116-.612-29.944-1.721 55.567 35.681 121.536 56.485 192.438 56.485 230.948 0 357.188-191.291 357.188-357.188l-.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="flex sm:w-auto w-full sm:justify-start sm:mb-0 mb-3 justify-center items-center ">
+                            <div class="lg:text-white lg:mr-4  mr-0 tracking-wider flex items-center"><span class="lg:text-gray-400 ">點數：1000 </span><img src="./img/coin.png" class="w-8 h-8 mr-2" alt="" srcset=""></div>
+
+
+                        </div>
+                        <p class="lg:text-gray-500 hover:text-blue-100  text-center leading-normal px-4 sm:px-0">
+                            一個無憂無慮的人 一句話的簡介物長不短
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
 
         </div>
     </div>
 
-
-
-
     <div class="bg-member ">
         <div class="flex container  max-w-6xl  mx-auto">
-            <div class="w-full  flex flex-row flex-wrap justify-between">
-                <div class="w-full lg:w-1/5 lg:px-6 text-xl text-gray-800 leading-normal">
-                    <!-- <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">Menu</p> -->
+            <div class="w-full  flex flex-row flex-wrap justify-around">
+                <div class="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal">
+                    <p class="text-base font-bold py-4 lg:pb-6 text-gray-700 lg:hidden">menu</p>
                     <div class="block lg:hidden sticky inset-0">
-                        <button id="menu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-purple-500 appearance-none focus:outline-none">
-                      <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                      </svg>
-                   </button>
+                        <button id="menu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-blue-500 appearance-none focus:outline-none">
+                            <svg class="fill-current h-3 float-right" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </button>
                     </div>
                     <!-- right-col -->
-                    <div class="pb-10 lg:rounded-lg shadow-sm  w-full ¥¥ inset-0 hidden h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-gray-400  lg:border-0 bg-white shadow lg:shadow-lg  z-20" style="top:5em;" id="menu-content">
+                    <div class="py-5 lg:rounded-lg shadow-sm  w-full inset-0 hidden h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-gray-400  lg:border-0 bg-white shadow lg:shadow-lg  z-20" style="top:5em;" id="menu-content">
                         <ul class="list-reset">
-                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
-                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:border-blue-500 lg:hover:border-blue-500">
-                                    <span class="pb-1 md:pb-0 text-base text-gray-900 font-bold"><i class="text-gray-500 pr-3 fas fa-cog"> </i>帳戶設定</span>
+                            <li class="py-2 md:my-0 text-center hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block  align-middle lg:text-gray-700   no-underline hover:text-blue-500 border-l-4 border-transparent lg:border-blue-500 lg:hover:border-blue-500">
+                                    <span class="pb-1 md:pb-0 text-base text-gray-900 font-bold"><i
+                                            class="text-gray-500 hover:text-blue-500 pr-3 fas fa-cog"> </i>帳戶設定</span>
                                 </a>
                             </li>
-                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
-                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
-                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 pr-3 fa fa-coins"> </i>儲值點數</span>
+                            <li class="py-2 md:my-0 text-center hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block  align-middle text-gray-700  no-underline hover:text-blue-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 hover:text-blue-500 pr-3 fa fa-coins">
+                                        </i>儲值點數</span>
                                 </a>
                             </li>
-                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
-                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
-                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 pr-3 far fa-list-alt"> </i>訂單記錄</span>
+                            <li class="py-2 md:my-0 text-center hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block  align-middle text-gray-700  no-underline hover:text-blue-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 hover:text-blue-500 pr-3 far fa-list-alt">
+                                        </i>訂單記錄</span>
                                 </a>
                             </li>
-                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
-                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
-                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 pr-3 far fa-comment"> </i>訊息記錄</span>
+                            <li class="py-2 md:my-0 text-center hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block  align-middle text-gray-700  no-underline hover:text-blue-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 hover:text-blue-500 pr-3 far fa-comment">
+                                        </i>訊息記錄</span>
                                 </a>
                             </li>
-                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
-                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
-                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 pr-3 far fa-clipboard"> </i>旅行計劃</span>
+                            <li class="py-2 md:my-0 text-center hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block  align-middle text-gray-700  no-underline hover:text-blue-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 hover:text-blue-100  pr-3 far fa-clipboard">
+                                        </i>旅行計劃</span>
                                 </a>
                             </li>
-                            <li class="py-2 md:my-0 hover:bg-blue-400 lg:hover:bg-transparent">
-                                <a href="#" class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-400 border-l-4 border-transparent lg:hover:border-gray-400">
-                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 pr-3 far fa-heart"> </i>我的收藏</span>
+                            <li class="py-2 md:my-0 text-center hover:bg-blue-400 lg:hover:bg-transparent">
+                                <a href="#" class="block  align-middle text-gray-700  no-underline hover:text-blue-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                                    <span class="pb-1 md:pb-0 text-base"><i class="text-gray-500 hover:text-blue-500 pr-3 far fa-heart">
+                                        </i>我的收藏</span>
                                 </a>
                             </li>
                         </ul>
@@ -124,7 +173,7 @@
 
 
                 <!-- left-col -->
-                <div class="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal  ">
+                <div class="w-full lg:w-3/4 lg:p-8 p-4 mt-0 lg:mt-0 text-gray-900 leading-normal  ">
                     <div class="py-2 ">
                         <!-- 麵包屑 -->
                         <div class=" my-2  mb-3">
@@ -141,154 +190,173 @@
                             </div>
 
                         </div>
-                        <div class="flex-1 text-gray-700 text-left bg-white  py-5 my-2 rounded-lg shadow-lg">
+                        <div class="flex-1 text-gray-700 text-left bg-white  py-5 my-2 rounded-lg shadow-lg mb-5">
                             <div class="lg:flex ">
                                 <div class="lg:flex-shrink-0 relative">
-                                    <img src="./img/user001.png" alt="" srcset="" class="w-10 h-10 absolute inset-0">
-                                    <div class="mx-5 h-48 w-48  md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l  overflow-hidden" style="background-image: url('./img/jp001.jpg')">
+                                    <img src="./img/user001.png" alt="" srcset="" class="object-cover ml-8 -mt-3   border-2  border-white  w-12 h-12 rounded-full absolute top-0 left-0 bg-blue-500 ">
+                                    <div class="lg:mx-5 mx-4 h-48 lg:w-70 w-52  md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l  overflow-hidden" style="background-image: url('./img/jp001.jpg')">
                                     </div>
 
                                 </div>
-                                <div class="mt-4 lg:mt-0  w-full lg:w-7/12">
-                                    <span class="bg-gray-500 tracking-wide text-xs text-gray-100 font-bold py-1 px-2">
-                                      訂單確認中
-                                    </span>
-                                    <p class="block mt-4 text-lg leading-tight font-semibold text-gray-900 ">旅行規劃師 — <span class="text-base font-thin">Jack Smitspanh </span></p>
-                                    <p class="block mt-4 text-lg leading-tight font-semibold text-gray-900 ">國家 ：<span class="text-base font-thin">日本 </span></p>
-                                    <p class="block mt-4 text-lg leading-tight font-semibold text-gray-900 ">區域 ：<span class="text-base font-thin">京都，大阪，神戶</span></p>
-                                    <div class=" mt-4 flex justify-between">
-                                        <div>
-                                            <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 text-sm rounded-full  font-semibold text-blue-400  mr-2  tracking-wider">吃貨</span>
-                                            <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-sm font-semibold text-blue-400  mr-2  tracking-wider">秘境</span>
-                                            <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-sm font-semibold text-blue-400  mr-2  tracking-wider">冒險</span>
+                                <div class="mt-4 lg:mt-0  w-full  max-w-full lg:max-w-full lg:pr-8">
+                                    <div class="flex relative">
+                                        <span class="bg-gray-500 tracking-wide text-xs text-gray-100 font-bold py-1 px-2 ml-4 lg:ml-0">
+                                            訂單確認中
+                                        </span>
+
+                                        <div class="min-w-15 bg-white min-h-16 p-0 mb-0 font-medium absolute top-0 right-0 lg:mr-0 mr-5 lg:mt-0 -mt-12">
+                                            <div class="w-16 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center shadow ">
+                                                <div class="block rounded-t overflow-hidden  text-center ">
+                                                    <div class="bg-gray-200 text-gray-500 hover:text-blue-100 py-1">
+                                                        March
+                                                    </div>
+                                                    <div class="pt-1  bg-gray-200">
+                                                        <span class="text-3xl font-bold text-gray-500 hover:text-blue-100 leading-tight">
+                                                            17
+                                                        </span>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div> <button class="bg-blue-500 hover:bg-orange-700 text-white font-thin  py-2 px-4 rounded mx-4 text-sm shadow-md">訊息聯絡 </button> </div>
+                                    </div>
+                                    <div class="px-4 mt-8 lg:px-0 lg:mt-0">
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            旅行規劃師 <span class="text-sm font-thin">— Jack Smitspanh </span></p>
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            國家 ：<span class="text-sm font-thin">日本 </span></p>
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            區域 ：<span class="text-sm font-thin">京都，大阪，神戶</span></p>
+                                        <div class=" mt-4 lg:flex justify-between">
+                                            <div>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">吃貨</span>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">秘境</span>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">冒險</span>
+                                            </div>
+                                            <div class="flex justify-between"> <button class="bg-blue-500 border border-blue-500 hover:bg-transparent hover:text-blue-500 text-white font-thin  py-2 px-4 rounded lg:ml-4 ml-0 lg:mt-0 mt-8 text-sm shadow-md">訊息聯絡
+                                                </button> </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+
+                        </div>
+                        <div class="flex-1 text-gray-700 text-left bg-white  py-5 my-2 rounded-lg shadow-lg mb-5">
+                            <div class="lg:flex ">
+                                <div class="lg:flex-shrink-0 relative">
+                                    <img src="./img/user001.png" alt="" srcset="" class="object-cover ml-8 -mt-3   border-2  border-white   w-12 h-12 rounded-full absolute top-0 left-0 bg-blue-500 ">
+                                    <div class="lg:mx-5 mx-4 h-48 lg:w-70 w-64  md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l  overflow-hidden" style="background-image: url('./img/jp001.jpg')">
+                                    </div>
+
+                                </div>
+                                <div class="mt-4 lg:mt-0  w-full  max-w-full lg:max-w-full lg:pr-8">
+                                    <div class="flex relative">
+                                        <span class="bg-teal-600 tracking-wide text-xs text-gray-100 font-bold py-1 px-2 ml-4 lg:ml-0">
+                                            訂單委託中
+                                        </span>
+
+                                        <div class="min-w-15 bg-white min-h-16 p-0 mb-0 font-medium absolute top-0 right-0 lg:mr-0 mr-5 lg:mt-0 -mt-12">
+                                            <div class="w-16 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center shadow ">
+                                                <div class="block rounded-t overflow-hidden  text-center ">
+                                                    <div class="bg-gray-200 text-gray-500 hover:text-blue-100 py-1">
+                                                        March
+                                                    </div>
+                                                    <div class="pt-1  bg-gray-200">
+                                                        <span class="text-3xl font-bold text-gray-500 hover:text-blue-100 leading-tight">
+                                                            17
+                                                        </span>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 mt-8 lg:px-0 lg:mt-0">
+                                        <p class="block lg:mt-4 lg:text-lg mt-2  text-base leading-tight font-semibold text-gray-900 ">
+                                            旅行規劃師<span class="text-sm font-thin"> — Jack Smitspanh </span></p>
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            國家 ：<span class="text-sm font-thin">日本 </span></p>
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            區域 ：<span class="text-sm font-thin">京都，大阪，神戶</span></p>
+                                        <div class=" mt-4 lg:flex justify-between">
+                                            <div>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">吃貨</span>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">秘境</span>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">冒險</span>
+                                            </div>
+                                            <div class="lg:flex-0 flex justify-between">
+                                                <button class="bg-transparent border border-blue-500 hover:bg-blue-500 hover:shadow-xl hover:text-white text-blue-500 font-thin  py-2 px-4 rounded lg:ml-4 ml-0 lg:mt-0 mt-8 text-sm shadow-md">完成訂單
+                                                </button>
+                                                <button class="bg-blue-500 border border-blue-500 hover:bg-transparent hover:shadow-xl hover:text-blue-500 text-white font-thin  py-2 px-4 rounded lg:ml-4 ml-0 lg:mt-0 mt-8 text-sm shadow-md">訊息聯絡
+                                                </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="flex-1 text-gray-700 text-left bg-white  py-5 my-2 rounded-lg shadow-lg mb-5">
+                            <div class="lg:flex ">
+                                <div class="lg:flex-shrink-0 relative">
+                                    <img src="./img/user001.png" alt="" srcset="" class="object-cover ml-8 -mt-3   border-2  border-white   w-12 h-12 rounded-full absolute top-0 left-0 bg-blue-500 ">
+                                    <div class="lg:mx-5 mx-4 h-48 lg:w-70 w-64  md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l  overflow-hidden" style="background-image: url('./img/jp002.jpg')">
+                                    </div>
+
+                                </div>
+                                <div class="mt-4 lg:mt-0  w-full  max-w-full lg:max-w-full lg:pr-8">
+                                    <div class="flex relative">
+                                        <span class="bg-blue-100 text-blue-500 tracking-wide text-xs text-gray-100 font-bold py-1 px-2 ml-4 lg:ml-0">
+                                            已完成
+                                        </span>
+
+                                        <div class="min-w-15 bg-white min-h-16 p-0 mb-0 font-medium absolute top-0 right-0 lg:mr-0 mr-5 lg:mt-0 -mt-12">
+                                            <div class="w-16 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center shadow ">
+                                                <div class="block rounded-t overflow-hidden  text-center ">
+                                                    <div class="bg-gray-200 text-gray-500 hover:text-blue-100 py-1">
+                                                        March
+                                                    </div>
+                                                    <div class="pt-1  bg-gray-200">
+                                                        <span class="text-3xl font-bold text-gray-500 hover:text-blue-100 leading-tight">
+                                                            17
+                                                        </span>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 mt-8 lg:px-0 lg:mt-0">
+                                        <p class="block lg:mt-4 lg:text-lg mt-2  text-base leading-tight font-semibold text-gray-900 ">
+                                            旅行規劃師 <span class="text-sm font-thin"> — Jack Smitspanh </span></p>
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            國家 ：<span class="text-sm font-thin">日本 </span></p>
+                                        <p class="block lg:mt-4 lg:text-lg mt-2 text-base leading-tight font-semibold text-gray-900 ">
+                                            區域 ：<span class="text-sm font-thin">京都，大阪，神戶</span></p>
+                                        <div class=" mt-4 lg:flex justify-between">
+                                            <div>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">吃貨</span>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">秘境</span>
+                                                <span class="inline-block bg-transparent  border border-blue-400  px-3 py-1 rounded-full text-xs font-normal text-blue-400  mr-2  tracking-wider">冒險</span>
+                                            </div>
+                                            <div class="lg:flex-0 flex justify-between">
+                                                <button class="cursor-not-allowed opacity-50 bg-gray-600  text-white font-thin  py-2 px-4 rounded lg:ml-4 ml-0 lg:mt-0 mt-8 text-sm ">已完成
+                                                </button>
+                                                <button class="bg-blue-500 border border-blue-500 hover:bg-transparent hover:shadow-xl hover:text-blue-500 text-white font-thin  py-2 px-4 rounded lg:ml-4 ml-0 lg:mt-0 mt-8 text-sm shadow-md">訊息聯絡
+                                                </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                         <!-- 訂單資料 -->
-                        <div class="flex rounded-lg bg-white shadow-sm -my-2">
 
-                            <div class="  max-w-3xl    px-8 lg:px10">
-                                <div class="flex items-center text-xs my-5">
-                                    <div class="icon icon001"></div>
-                                    <h3 class="text-xl text-blue-400 font-medium ">簡介</h3>
-                                </div>
-                                <div class="">
-                                    <ul class=" list-inside font-base text-gray-600 leading-5 ml-1">
-
-                                        <li class="mb-2">暱稱：警長先生</li>
-                                        <li class="mb-2">服務經驗：10年</li>
-                                        <li class="mb-2">常駐城市：台灣</li>
-                                        <li class="mb-3">服務語言：中文、英語</li>
-                                    </ul>
-
-                                </div>
-                                <hr class="border-grey-light border-t my-6">
-                                <!-- step2 -->
-                                <div class="flex items-center text-xs my-5">
-                                    <div class="icon icon002"></div>
-                                    <h3 class="text-xl text-blue-400 font-medium ">經歷</h3>
-                                </div>
-
-                                <p class=" font-base text-gray-700 leading-6 ml-1">
-                                    旅遊專業畢業，曾從事導遊、領隊、OP、銷售等行業內各種工作，累計超過8年專業服務經驗，善於理解用戶需求，並提供對應解決方案。 以自由行、包車自駕等形式在東南亞、北美等地近20個國家深度旅行，旅行經驗豐富。多次為家庭出遊、親朋好友以及地產公司、科技公司、科研院所等機構提供定制旅行服務。 </p>
-
-                                <hr class="border-grey-light border-t my-6">
-
-                                <div class="flex items-center text-xs my-5">
-                                    <div class="icon icon003"></div>
-                                    <h3 class="text-xl text-blue-400 font-medium ">專長</h3>
-                                </div>
-                                <div class="px-2">
-                                    <div class="flex flex-wrap -mx-3 ml-1">
-                                        <div class="w-full lg:w-1/2 bg-cover h-48 " style="background-image: url('../img/jp001.jpg')">
-                                        </div>
-
-                                        <div class="w-full lg:w-1/2 px-0 lg:px-4 flex flex-col justify-between">
-                                            <h3 class="text-xl text-blue-400 font-medium my-2  px:0 lg:px-2"> 國家：<span class="text-gray-500 text-base font-mono"> 日本</span></h3>
-                                            <h3 class="text-xl text-blue-400 font-medium my-2 px:0 lg:px-2"> 區域：<span class="text-gray-500 text-base font-mono"> 大阪 神戶 京都 名古屋</span></h3>
-                                            <div class="people_wrap mt-6 lg:mt-4 flex flex-wrap leading-sm inline-flex items-center">
-                                                <button class="bg-blue-500">
-                          冒險</button><button class="bg-blue-500">景點</button><button class="bg-blue-500">文化</button><button class="bg-blue-600">吃貨</button>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <hr class="border-grey-light border-t my-6">
-                                <div class="flex items-center text-xs my-5">
-                                    <div class="icon icon004"></div>
-                                    <h3 class="text-xl text-blue-400 font-medium ">旅行家評價</h3>
-                                </div>
-                                <div class="mb-8 px-2">
-                                    <div class="flex flex-wrap -mx-3">
-                                        <div class="md:1/6 lg:w-1/12 ">
-                                            <div class="w-12 h-12 rounded-full bg-blue-500 p-1 mb-3 ml-1">
-                                                <img src="./img/man001.svg" alt="" class="mx-auto object-cover w-10 h-10 rounded-full">
-                                            </div>
-                                        </div>
-
-                                        <div class="text-sm md:4/6 lg:w-10/12 ml-2">
-
-                                            <p class="text-gray-900 leading-none text-base ">圈圈人 <span class="star text-yellow-500 text-xs ">
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i></span></p>
-
-                                            <div class="mt-2 mb-8 py-2 text-gray-700">
-                                                <div class="  font-medium mb-7 bg-gray-200 rounded-lg h-auto pb-5">
-                                                    <p class="text-sm  leading-relaxed px-5 pt-5">這是第一次到日本遊玩，並在FindTrip訂購烤肉行程，還有規劃師幫忙行程真的太好了， 餐廳超級很好吃喔！下次還會預定喔！
-
-
-                                                        <p class="text-xs text-gray-500 px-5 pt-5"> 2020.6.4 評價 </p>
-                                                    </p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="flex flex-wrap -mx-2">
-                                        <div class="md:1/6 lg:w-1/12 ">
-                                            <div class="w-12 h-12 rounded-full bg-blue-500 p-1 mb-3 ml-1">
-                                                <img src="./img/man002.svg" alt="" class="mx-auto object-cover w-10 h-10 rounded-full">
-                                            </div>
-                                        </div>
-
-                                        <div class="text-sm md:4/6 lg:w-10/12 ml-2">
-
-                                            <p class="text-gray-900 leading-none text-base ">名偵探<span class="star text-yellow-500 text-xs ">
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i>
-                          <i class="fa fa-star text-orange-500"></i></span></p>
-
-                                            <div class="mt-2 mb-8 py-2 text-gray-700">
-                                                <div class="  font-medium mb-7 bg-gray-200 rounded-lg h-auto pb-5">
-                                                    <p class="text-sm  leading-relaxed px-5 pt-5">這是第一次到日本遊玩，並在FindTrip訂購烤肉行程，還有規劃師幫忙行程真的太好了， 餐廳超級很好吃喔！下次還會預定喔！
-
-
-                                                        <p class="text-xs text-gray-500 px-5 pt-5"> 2020.6.4 評價 </p>
-                                                    </p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -314,20 +382,20 @@
     <!-- 海浪特效 -->
     <div class="relative -mt-12  lg:-mt-22">
         <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 
    58-18 88-18s
    58 18 88 18 
    58-18 88-18 
    58 18 88 18
    v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use xlink:href="#gentle-wave" x="50" y="0" fill="#1983d4" />
-        <use xlink:href="#gentle-wave" x="50" y="3" fill="#1983d4" />
-        <use xlink:href="#gentle-wave" x="50" y="6" fill="#0a65c2" />
-      </g>
-    </svg>
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#1983d4" />
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#1983d4" />
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#0a65c2" />
+            </g>
+        </svg>
     </div>
     <footer class="bg-blue-sea ">
 
