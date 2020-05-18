@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Trip">
+    <meta name="keywords" content="Find Trip">
+    <meta name="author" content="Find Trip">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css?12" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <style>
+
+    </style>
+    <title>Find Trip</title>
+</head>
+
+
+<body class="leading-normal tracking-normal">
+    <div class="w-full max-x-6xl container mx-auto mt-10 ">
+
+        <div class="shadow-md ">
+            <div class="rounded-lg bg-white w-11/12 md:w-5/6 md:px-4 ">
+                <div class="flex flex-col justify-between h-full relative  bg-red-500">
+
+                    <div class="flex  bg-gray-100 border-indigo-500 leading-normal">
+
+                        <div class="h-24 w-full md:w-1/4 flex flex-row 
+                      items-center bg-yellow-100">
+                            <div class="p-1 rounded-full w-16 bg-yellow-400">
+
+                                <img class=" text-white object-contain" src="./img/user001.png">
+
+                            </div>
+                            <div class="w-auto text-grey-darker items-center p-4">
+                                <span class="text-lg font-bold pb-4">
+                            david1010110
+                        </span>
+                                <p class="mt-2 leading-tight text-gray-600">
+                                    會啊你好好好好提......<span class="text-xs">2020-5-13  </span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="border-l-2  w-full md:w-3/4  flex flex-row md:flex-col
+                        items-center ">
+                            <div class="flex relative justify-start mb-16">
+                                <div class="p-1 rounded-full w-16  h-16 bg-yellow-400 mx-3">
+
+                                    <img class=" text-white object-contain" src="./img/user001.png">
+
+                                </div>
+                                <div class="relative ml-4 msgbox  w-3/4 bg-blue-400 rounded-lg py-2 px-3">
+                                    tamizhographer My book of this month arrived 😍😍😍 This time it's a #norsk #author #jonesbo. I have planned to read his #HarryHole #crime series and #Flaggermusmannen is the first book of this series.
+                                    <p class="block text-xs  text-gray-300 text-right "> <i class=" fa fa-clock"></i>2020.5.20 </p>
+                                </div>
+
+                            </div>
+                            <div class="flex relative justify-end mb-16">
+
+                                <div class="relative ml-4 msgbox  w-3/4 bg-blue-400 rounded-lg py-2 px-3">
+                                    tamizhographer My book of this month arrived 😍😍😍 This time it's a #norsk #author #jonesbo. I have planned to read his #HarryHole #crime series and #Flaggermusmannen is the first book of this series.
+                                    <p class="block text-xs  text-gray-300 text-right "> <i class=" fa fa-clock"></i>2020.5.20 </p>
+                                </div>
+
+                                <div class="p-1 rounded-full w-16  h-16 bg-yellow-400 mx-3">
+
+                                    <img class=" text-white object-contain" src="./img/user001.png">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+<script>
+    /* Optional Javascript to close the radio button version by clicking it again */
+    var myRadios = document.getElementsByName('tabs2');
+    var setCheck;
+    var x = 0;
+    for (x = 0; x < myRadios.length; x++) {
+        myRadios[x].onclick = function() {
+            if (setCheck != this) {
+                setCheck = this;
+            } else {
+                this.checked = false;
+                setCheck = null;
+            }
+        };
+    }
+
+    var myCheckboxs = document.getElementsByName('tabs');
+    var setCheck;
+    var x = 0;
+    for (let x = 0; x < myCheckboxs.length; x++) {
+
+        myCheckboxs[x].onclick = function() {
+            if (setCheck != this) {
+                setCheck = this;
+            } else {
+                this.checked = false;
+                setCheck = null;
+            }
+        }
+    }
+</script>
+
+</html>

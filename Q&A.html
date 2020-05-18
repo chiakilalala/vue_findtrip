@@ -42,11 +42,11 @@
         /*.p-5*/
         border-left-width: 2px;
         /*.border-l-2*/
-        border-color: #6574cd;
+        border-color: #4299e1;
         /*.border-indigo*/
         background-color: #f8fafc;
         /*.bg-gray-100 */
-        color: #6574cd;
+        color: #4299e1;
         /*.text-indigo*/
     }
     /* Icon */
@@ -68,7 +68,7 @@
     /* Icon formatting - closed */
     
     .tab input[type=checkbox]+label::after {
-        content: "+";
+        content: "\25BE";
         font-weight: bold;
         /*.font-bold*/
         border-width: 1px;
@@ -93,8 +93,8 @@
     /* Icon formatting - open */
     
     .tab input[type=checkbox]:checked+label::after {
-        transform: rotate(315deg);
-        background-color: #6574cd;
+        transform: rotate(180deg);
+        background-color: #4299e1;
         /*.bg-indigo*/
         color: #f8fafc;
         /*.text-grey-lightest*/
@@ -102,7 +102,7 @@
     
     .tab input[type=radio]:checked+label::after {
         transform: rotateX(180deg);
-        background-color: #6574cd;
+        background-color: #4299e1;
         /*.bg-indigo*/
         color: #f8fafc;
         /*.text-grey-lightest*/
@@ -112,7 +112,7 @@
 
 <body class="font-sans container">
     <div class="w-full md:w-3/5 mx-auto p-8">
-        <p>Open <strong>multiple</strong></p>
+        <p><strong>關於Find Trip 的Ｑ＆Ａ</strong></p>
         <div class="shadow-md">
             <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
@@ -125,46 +125,49 @@
             </div>
             <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-                <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Q: 當我收到旅行家提出諮詢訂單後，回覆的時間有限制嗎?</label>
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Q:
+                    當我收到旅行家提出諮詢訂單後，回覆的時間有限制嗎?</label>
                 <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
                     <p class="p-5">A: 當規劃師收到提案後，需在14天內以email方式回覆旅行計劃給旅行家</p>
                 </div>
             </div>
             <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
-                <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Q: 當我向規畫師下標訂單後，多久會收到規劃師的訂單回覆和訂製的旅行計畫呢</label>
+                <label class="block p-4 w-full  leading-normal cursor-pointer" for="tab-multi-three">Q:
+                    當我下標訂單後，多久會收到訂單回覆和訂製的旅行計畫呢</label>
                 <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
                     <p class="p-5">A: 規劃師須在三(3)天內確認訂單，並在十四(14)天內回傳您的旅行計畫，否則視為訂單無效，並將會全額退還點數給您。</p>
                 </div>
             </div>
+            <div class="tab w-full overflow-hidden border-t">
+                <input class="absolute opacity-0" id="tab-multi-four" type="checkbox" name="tabs">
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">Q:
+                    為什麼選擇尋旅上的規劃師來幫助規劃旅遊行程呢?</label>
+                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                    <p class="p-5 ">A: 因為喜愛旅遊、 熱愛旅遊，尋旅提供一個媒合平台讓有相同喜好的規劃師們可以依據您的個人需求，提供專屬於你、量身打造的旅行計畫，您也能用依照您的個人預算，尋找您喜歡的規劃師來為您規劃旅遊行程
+                    </p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t">
+                <input class="absolute opacity-0" id="tab-multi-five" type="checkbox" name="tabs">
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Q:我如何訂購與規畫師的諮詢時間呢?</label>
+                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                    <p class="p-5">A: 凡註冊尋旅會員，即可免費獲得1000點數。每個規劃師會依據個人不同的旅行計畫來訂定價格，而您支付的點數會在下標諮詢後暫存於尋旅裡，並待規畫師將旅遊計畫回覆給您後點數才會給付給規劃師。
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="tab w-full overflow-hidden border-t">
+                <input class="absolute opacity-0" id="tab-multi-six" type="checkbox" name="tabs">
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six"> Q: 點數用完了，該怎麼購買?</label>
+                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                    <p class="p-5">A: 在首頁頁面點選儲值點數，即可選取您欲購買的點數值並付款</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="w-full md:w-3/5 mx-auto p-8">
-        <p>Open <strong>one</strong></p>
-        <div class="shadow-md">
-            <div class="tab w-full overflow-hidden border-t">
-                <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-                <label class="block p-5 leading-normal cursor-pointer" for="tab-single-one">Label One</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                    <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                </div>
-            </div>
-            <div class="tab w-full overflow-hidden border-t">
-                <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
-                <label class="block p-5 leading-normal cursor-pointer" for="tab-single-two">Label Two</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                    <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                </div>
-            </div>
-            <div class="tab w-full overflow-hidden border-t">
-                <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
-                <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">Label Three</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                    <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </body>
 
 <script>
@@ -181,6 +184,21 @@
                 setCheck = null;
             }
         };
+    }
+
+    var myCheckboxs = document.getElementsByName('tabs');
+    var setCheck;
+    var x = 0;
+    for (let x = 0; x < myCheckboxs.length; x++) {
+
+        myCheckboxs[x].onclick = function() {
+            if (setCheck != this) {
+                setCheck = this;
+            } else {
+                this.checked = false;
+                setCheck = null;
+            }
+        }
     }
 </script>
 

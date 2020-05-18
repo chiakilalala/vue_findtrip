@@ -45,7 +45,7 @@ var helpMenu = document.getElementById("menu-toggle");
 document.onclick = check;
 //Help Menu
 function check(e) {
-    var target = (e && e.target) || (event && event.srcElement);
+    var target = (e && e.target) || (event && event.srcElement); //srcElement ie支持
     if (!checkParent(target, helpMenuDiv)) {
         // click NOT on the menu
         if (checkParent(target, helpMenu)) {
