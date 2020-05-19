@@ -17,63 +17,73 @@
     <title>Find Trip</title>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient-blue">
+<body class="leading-normal tracking-normal text-white gradient-blue relative ">
     <!--Nav-->
-    <nav id="header" class=" w-full z-30 top-0 text-white">
-        <div class="w-full container mx-auto flex flex-wrap max-w-6xl items-center justify-between mt-0 py-2">
+    <nav id="header" class=" w-full z-30 top-0 text-white  transition-all">
+        <div class="w-full container mx-auto flex flex-wrap max-w-7xl items-center justify-between my-5 py-2">
 
             <div class="pl-4 flex items-center">
-                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">Logo </a>
+                <a class=" toggleColour  no-underline hover:no-underline font-bold text-2xl lg:text-4xl flex relative" href="#" style="background-image: url('./img/logo_1.svg')"> </a>
 
 
             </div>
 
-            <div class="block lg:hidden pr-4">
+            <div class=" block lg:hidden pr-4 ">
                 <!-- mobile -->
-                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                <button id="nav-toggle " class="cursor-pointer flex items-center px-3 py-2 text-gray-500 hover:text-blue-100 hover:text-gray-800 appearance-none focus:outline-none ">
+                    <svg class="fill-current h-3 w-3 " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg ">
+                   
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z " />
                     </svg>
                 </button>
             </div>
             <!-- desktop -->
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                    <li class="mr-3">
-                        <a class="inline-block py-2 px-4 text-black  no-underline" href="#">尋找旅行規劃師</a>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 " id="nav-content ">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center ">
+                    <li class="mr-3 ">
+                        <a class="inline-block py-2 px-4 text-black no-underline " href="# ">尋找旅行規劃師</a>
                     </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-black no-underline   hover:text-gray-800 hover:text-underline py-2 px-4" href="#">進入許願池</a>
+                    <li class="mr-3 ">
+                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 " href="# ">進入許願池</a>
                     </li>
 
                 </ul>
-                <button id="navAction" class="outline-none mx-auto lg:mx-0 hover:shadow-lg bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75"><i
-                        class="fas fa-user-astronaut"></i>登入</button>
+                <button id="navAction " class="outline-none mx-auto lg:mx-0 hover:shadow-lg bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75 "><i
+                        class="fas fa-user-astronaut pr-3 "></i>登入</button>
             </div>
         </div>
     </nav>
     <!-- hero -->
-    <div class="pt-12 lg:pt-24 hero-bg">
-        <section class="lg:h-screen -mt-1 md:-mt-24 lg:pt-24 w-full flex flex-wrap ">
+    <div class=" hero-bg relative ">
+        <section class="w-full container mx-auto flex flex-wrap max-w-7xl lg:h-screen -mt-1 md:-mt-24 lg:pt-24 ">
             <!--Left Col-->
-            <div class="h-64 w-full lg:h-full lg:w-1/2 flex justify-center items-center ">
-                <div class="max-w-lg px-10 lg:px-12 lg:pr-2  pt-5 lg:pt-16">
-                    <h1 class="my-4  text-4xl text-center lg:text-left md:text-6xl  font-semibold leading-normal text-gray-100 lg:text-gray-700 mb-8">
+            <div class="pointer-events-none w-full lg:h-full lg:w-1/2 flex lg:justify-start justify-center items-center ">
+                <div class="mt-24 lg:mt-0 max-w-lg px-10 lg:px-6 -ml-3 lg:pr-2 pt-5 lg:pt-16 ">
+                    <h1 class="my-4 text-5xl lg:text-6xl text-center lg:text-left md:text-6xl font-semibold lg:leading-normal leading-snug text-gray-100 lg:text-gray-700 lg:mb-8 mb-4 ">
                         Travel More Plan Less
                     </h1>
-                    <p class="leading-normal text-xl mb-8 text-gray-100 lg:text-gray-700">Sub-hero message, not too long and not too short. Make it just right!</p>
+                    <p class="text-center lg:text-left lg:font-medium font-normal leading-normal lg:text-2xl text-xl mb-8 md:text-gray-600 lg:text-gray-700 ">專人量身打造行程，滿足您的旅行願望 ，省時旅遊超容易</p>
                 </div>
             </div>
 
             <!--Right Col-->
-            <div class=" sm:h-20 h-screen w-full lg:h-full lg:w-1/2 relative">
-                <div class="absolute inset-0 mt-5">
-                    <img src="./img/airplane.png" alt="" class="w-2/5 ">
+            <div class=" sm:h-20 h-screen w-full lg:h-full lg:w-1/2 relative ">
+                <div class="absolute inset-0 lg:mt-5 mt-8 airplane ">
+                    <img src="./img/airplane.png " alt=" " class="w-1/4 lg:w-2/5 ">
                 </div>
             </div>
 
+
+
         </section>
+        <div class="clouds ">
+            <img src="./img/cloud1.png " alt=" " style="--i:1; ">
+            <img src="./img/cloud2.png " alt=" " style="--i:2; ">
+            <img src="./img/cloud3.png " alt=" " style="--i:3; ">
+            <img src="./img/cloud4.png " alt=" " style="--i:4; ">
+            <img src="./img/cloud5.png " alt=" " style="--i:5; ">
+
+        </div>
 
     </div>
 
@@ -82,24 +92,28 @@
 
 
 
-    <div class="relative  -mt-0  lg:-mt-1 transform rotate-180">
+    <div class="relative -mt-0 lg:-mt-1 transform rotate-180 ">
+
         <!--lg:-mt-24-->
-        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+        <svg viewBox="0 0 1428 174 " version="1.1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink ">
+            <g stroke="none " stroke-width="1 " fill="none " fill-rule="evenodd ">
+                <g transform="translate(-2.000000, 44.000000) " fill="#FFFFFF " fill-rule="nonzero ">
                     <path
-                        d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                        opacity="0.100000001"></path>
+                        d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496 "
+                        opacity="0.100000001 "></path>
                     <path
-                        d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                        opacity="0.100000001"></path>
+                        d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838
+                    250.863238,145.462612 100,104.708498 Z "
+                        opacity="0.100000001 "></path>
                     <path
-                        d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                        id="Path-4" opacity="0.200000003"></path>
+                        d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z "
+                        id="Path-4 " opacity="0.200000003 "></path>
                 </g>
-                <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <g transform="translate(-4.000000, 76.000000) " fill="#FFFFFF " fill-rule="nonzero ">
                     <path
-                        d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+                        d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008
+                    636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304
+                    C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z ">
                     </path>
                 </g>
             </g>
@@ -107,33 +121,33 @@
     </div>
 
     <!-- feature -->
-    <section class="bg-white  py-8 pb-0 gradient-blue relative">
-        <div class="w-full mb-5">
-            <div class=" mx-auto bg-blue-200 border-4 border-white w-20  h-20 my-0 py-0 rounded-full flex items-center">
-                <img src="./img/section01.png" alt="">
+    <section class="bg-white py-8 pb-0 gradient-blue relative ">
+        <div class="w-full mb-5 ">
+            <div class=" mx-auto bg-blue-200 border-4 border-white w-20 h-20 my-0 py-0 rounded-full flex items-center ">
+                <img src="./img/section01.png " alt=" ">
             </div>
         </div>
-        <div class="container  mx-auto flex max-w-6xl flex-wrap  pb-12 sm:px-4">
-            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-300">How to Start ?
+        <div class="container mx-auto flex max-w-7xl flex-wrap pb-12 sm:px-4 ">
+            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-300 ">How to Start ?
             </h1>
-            <div class="w-full mb-5">
-                <p class="leading-tight text-base text-center  tracking-widest  relative heading-sub"> 如何使用 </p>
+            <div class="w-full mb-5 ">
+                <p class="leading-tight text-base text-center tracking-widest relative heading-sub "> 如何使用 </p>
             </div>
 
-            <div class="w-full md:w-1/3 py-6 px-4 flex flex-col flex-grow flex-shrink relative">
-                <div class="flex-1 bg-white rounded-lg overflow-hidden shadow arrow-step">
+            <div class="-ml-3 w-full md:w-1/4 py-6 px-4 flex flex-col flex-grow flex-shrink relative ">
+                <div class="flex-1 bg-white rounded-lg overflow-hidden shadow arrow-step ">
 
 
-                    <div class="flex items-center justify-center">
-                        <div class="mx-auto lg:mx-0   bg-blue-600 text-white  rounded-full  mt-6 mb-4 py-2 px-8 ">Step 01
+                    <div class="flex items-center justify-center ">
+                        <div class="mx-auto lg:mx-0 bg-blue-600 text-white rounded-full mt-6 mb-4 py-2 px-8 ">Step 01
                         </div>
                     </div>
-                    <div class="flex items-center justify-center mb-3 w-46 mx-auto">
-                        <img src="./img/feature001.png" alt="feature001.png">
+                    <div class="flex items-center justify-center mb-3 w-46 mx-auto ">
+                        <img src="./img/feature001.png " alt="feature001.png ">
                     </div>
 
 
-                    <div class="w-full font-bold text-base text-center text-gray-800 px-6 pb-6">決定好旅行的區域、預算</div>
+                    <div class="w-full font-bold text-base text-center text-gray-800 px-6 pb-6 ">決定好旅行的區域、預算</div>
 
 
                 </div>
@@ -141,40 +155,40 @@
             </div>
             <!-- step01 -->
 
-            <div class="w-full md:w-1/3 py-6 px-4 flex flex-col flex-grow flex-shrink relative">
-                <div class="flex-1 bg-white rounded-lg overflow-hidden shadow arrow-step">
+            <div class="w-full md:w-1/4 py-6 px-4 flex flex-col flex-grow flex-shrink relative ">
+                <div class="flex-1 bg-white rounded-lg overflow-hidden shadow arrow-step ">
 
 
-                    <div class="flex items-center justify-center">
-                        <div class="mx-auto lg:mx-0   bg-blue-600 text-white  rounded-full  mt-6 mb-4 py-2 px-8 ">Step 01
+                    <div class="flex items-center justify-center ">
+                        <div class="mx-auto lg:mx-0 bg-blue-600 text-white rounded-full mt-6 mb-4 py-2 px-8 ">Step 01
                         </div>
                     </div>
-                    <div class="flex items-center justify-center mb-3  w-46 mx-auto">
-                        <img src="./img/feature002.png" alt="feature002.png">
+                    <div class="flex items-center justify-center mb-3 w-46 mx-auto ">
+                        <img src="./img/feature002.png " alt="feature002.png ">
                     </div>
 
 
-                    <div class="w-full font-bold text-base text-center text-gray-800 px-6 pb-6">尋找專屬您的旅行規劃師</div>
+                    <div class="w-full font-bold text-base text-center text-gray-800 px-6 pb-6 ">尋找專屬您的旅行規劃師</div>
 
 
                 </div>
 
             </div>
             <!-- step02 -->
-            <div class="w-full md:w-1/3 py-6 px-4 flex flex-col flex-grow flex-shrink relative">
+            <div class="w-full md:w-1/4 py-6 px-4 flex flex-col flex-grow flex-shrink relative ">
                 <div class="flex-1 bg-white rounded-lg overflow-hidden shadow ">
 
 
-                    <div class="flex items-center justify-center">
-                        <div class="mx-auto lg:mx-0   bg-orange-600 text-white  rounded-full  mt-6 mb-4 py-2 px-8 ">Step 03
+                    <div class="flex items-center justify-center ">
+                        <div class="mx-auto lg:mx-0 bg-orange-600 text-white rounded-full mt-6 mb-4 py-2 px-8 ">Step 03
                         </div>
                     </div>
-                    <div class="flex items-center justify-center mb-3 w-46 mx-auto">
-                        <img src="./img/feature003.png" alt="feature003.png">
+                    <div class="flex items-center justify-center mb-3 w-46 mx-auto ">
+                        <img src="./img/feature003.png " alt="feature003.png ">
                     </div>
 
 
-                    <div class="w-full font-bold text-base text-center text-gray-800 px-6 pb-6">享受量身打造旅程</div>
+                    <div class="w-full font-bold text-base text-center text-gray-800 px-6 pb-6 ">享受量身打造旅程</div>
 
 
                 </div>
@@ -185,70 +199,73 @@
             <!-- step03 -->
         </div>
 
-        <div class="relative -mt-12  lg:-mt-10 ">
+
+        <div class="relative -mt-12 lg:-mt-10 ">
             <!--lg:-mt-24-->
-            <svg id="data-bg-top" viewBox="0 0 3000 760" preserveAspectRatio="none">
+            <svg id="data-bg-top " viewBox="0 0 3000 760 " preserveAspectRatio="none ">
                 <path
-                    d="M0 760h3000V68.7C2930 36.5 2825.1.2 2712.3 0c-155.9-.3-370.4 59.3-513.3 180.5-206.7 175.1-472 143.6-554 124-182.6-43.8-156.4-143.2-450-140-212.8 2.3-263.7 120.5-491 243-179.3 96.6-580.1 65.8-704-41.8V760z">
+                    d="M0 760h3000V68.7C2930 36.5 2825.1.2 2712.3 0c-155.9-.3-370.4 59.3-513.3 180.5-206.7 175.1-472 143.6-554 124-182.6-43.8-156.4-143.2-450-140-212.8 2.3-263.7 120.5-491 243-179.3 96.6-580.1 65.8-704-41.8V760z ">
                 </path>
             </svg>
         </div>
 
+
+
     </section>
     <!-- 熱門規劃師 -->
-    <section class="bg-chiaki-blue  ">
+    <section class="bg-chiaki-blue ">
         <div class="w-full mb-5 ">
-            <div class=" mx-auto bg-blue-200 border-4 border-white w-20  h-20 my-0 py-0 rounded-full flex items-center">
-                <img src="./img/section02.png" alt="">
+            <div class=" mx-auto bg-blue-200 border-4 border-white w-20 h-20 my-0 py-0 rounded-full flex items-center ">
+                <img src="./img/section02.png " alt=" ">
             </div>
         </div>
-        <div class="container  mx-auto flex max-w-6xl flex-wrap  pb-12 sm:px-4">
-            <h1 class="w-full my-2  font-bold leading-tight text-center text-blue-600 text-4xl lg:text-5xl">
+        <div class="container mx-auto flex max-w-7xl flex-wrap pb-12 sm:px-4 ">
+            <h1 class="w-full my-2 font-bold leading-tight text-center text-blue-600 text-4xl lg:text-5xl ">
                 Recommend</h1>
-            <div class="w-full mb-5">
-                <p class="leading-tight text-base text-center  tracking-widest text-gray-700 relative heading-sub">
+            <div class="w-full mb-5 ">
+                <p class="leading-tight text-base text-center tracking-widest text-gray-700 relative heading-sub ">
                     熱門規劃師 </p>
             </div>
 
             <!-- Column -->
-            <div class="my-4 px-4 w-full   lg:w-1/3 ">
+            <div class="my-4 px-4 w-full lg:w-1/3 -ml-3 ">
 
                 <!-- Article -->
-                <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+                <article class="overflow-hidden rounded-lg shadow-lg bg-white ">
 
-                    <a href="#">
-                        <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?travel=1">
+                    <a href="# ">
+                        <img alt="Placeholder " class="block h-auto w-full " src="./img/453-600x400.jpg ">
                     </a>
-                    <div class="flex justify-content-end relative people">
-                        <img alt="Placeholder" class="block rounded-full border-white border-2 shadow" src="https://picsum.photos/50/50/?people=1">
+                    <div class="flex justify-content-end relative people ">
+                        <img alt="Placeholder " class="block rounded-full border-white border-2 shadow " src="https://picsum.photos/50/50/?people=1 ">
                     </div>
-                    <header class="px-6 pb-4 -mt-10">
+                    <header class="px-6 pb-4 -mt-10 ">
                         <!-- start star -->
                         <span class="star text-yellow-500 text-xs ">
-                            <i class="fa fa-star fa-1x"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star text-gray-300"></i>
-                            <span class="tracking-wider text-xs text-gray-500">(12) </span>
+                            <i class="fa fa-star fa-1x "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star text-gray-300 "></i>
+                            <span class="tracking-wider text-xs text-gray-500 ">(12) </span>
                         </span>
-                        <div class="text-lg text-gray-800 font-semibold  mt-2 mb-3">
+                        <div class="text-lg text-gray-800 font-semibold mt-2 mb-3 ">
                             冰島
                         </div>
-                        <p class="text-gray-600 text-sm mt-2">
+                        <p class="text-gray-600 text-sm mt-2 ">
                             辛格維利爾 海克拉山 蘭德納曼卡 黃金圈
                         </p>
                     </header>
-                    <div class="px-6 pb-4">
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2  tracking-wider">吃貨</span>
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2 tracking-wider">秘境</span>
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white tracking-wider">冒險</span>
+                    <div class="px-6 pb-4 ">
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white mr-2 tracking-wider ">吃貨</span>
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white mr-2 tracking-wider ">秘境</span>
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white tracking-wider ">冒險</span>
                     </div>
 
                     <footer class="flex items-center justify-between leading-none px-6 py-4 ">
-                        <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <a class="flex items-center no-underline hover:underline text-black " href="# ">
 
-                            <p class=" font-semibold text-md">
+                            <p class=" font-semibold text-md ">
                                 Author Name
                             </p>
 
@@ -256,7 +273,7 @@
 
                         <!-- end star -->
 
-                        <span class=" flex items-center text-lg text-blue-500">1,000 <i class="fa fa-coin"></i></span>
+                        <span class=" flex items-center text-lg text-blue-500 ">1,000 <i class="fa fa-coin "></i></span>
 
 
                     </footer>
@@ -266,44 +283,44 @@
 
             </div>
             <!-- Column -->
-            <div class="my-4 px-4 w-full    lg:w-1/3">
+            <div class="my-4 px-4 w-full lg:w-1/3 ">
 
                 <!-- Article -->
-                <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+                <article class="overflow-hidden rounded-lg shadow-lg bg-white ">
 
-                    <a href="#">
-                        <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?travel=2">
+                    <a href="# ">
+                        <img alt="Placeholder " class="block h-auto w-full " src="./img/781-600x400.jpg ">
                     </a>
-                    <div class="flex justify-content-end relative people">
-                        <img alt="Placeholder" class="block rounded-full border-white border-2 shadow" src="https://picsum.photos/50/50/?people=2">
+                    <div class="flex justify-content-end relative people ">
+                        <img alt="Placeholder " class="block rounded-full border-white border-2 shadow " src="https://picsum.photos/50/50/?people=2 ">
                     </div>
-                    <header class="px-6 pb-4 -mt-10">
+                    <header class="px-6 pb-4 -mt-10 ">
                         <!-- start star -->
                         <span class="star text-yellow-500 text-xs ">
-                            <i class="fa fa-star fa-1x"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star text-gray-300"></i>
-                            <span class="tracking-wider text-xs text-gray-500">(12) </span>
+                            <i class="fa fa-star fa-1x "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star text-gray-300 "></i>
+                            <span class="tracking-wider text-xs text-gray-500 ">(12) </span>
                         </span>
-                        <div class="text-lg text-gray-800 font-semibold  mt-2 mb-3">
+                        <div class="text-lg text-gray-800 font-semibold mt-2 mb-3 ">
                             冰島
                         </div>
-                        <p class="text-gray-600 text-sm mt-2">
+                        <p class="text-gray-600 text-sm mt-2 ">
                             辛格維利爾 海克拉山 蘭德納曼卡 黃金圈
                         </p>
                     </header>
-                    <div class="px-6 pb-4">
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2 tracking-wide">吃貨</span>
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2 ">秘境</span>
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white">冒險</span>
+                    <div class="px-6 pb-4 ">
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white mr-2 tracking-wide ">吃貨</span>
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white mr-2 ">秘境</span>
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white ">冒險</span>
                     </div>
 
                     <footer class="flex items-center justify-between leading-none px-6 py-4 ">
-                        <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <a class="flex items-center no-underline hover:underline text-black " href="# ">
 
-                            <p class=" font-semibold text-md">
+                            <p class=" font-semibold text-md ">
                                 Author Name
                             </p>
 
@@ -311,7 +328,7 @@
 
                         <!-- end star -->
 
-                        <span class=" flex items-center text-lg text-blue-500">1,000 <i class="fa fa-coin"></i></span>
+                        <span class=" flex items-center text-lg text-blue-500 ">1,000 <i class="fa fa-coin "></i></span>
 
 
                     </footer>
@@ -321,44 +338,44 @@
 
             </div>
             <!-- Column -->
-            <div class="my-4 px-4 w-full   lg:w-1/3">
+            <div class="my-4 px-4 w-full lg:w-1/3 ">
 
                 <!-- Article -->
-                <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+                <article class="overflow-hidden rounded-lg shadow-lg bg-white ">
 
-                    <a href="#">
-                        <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?travel=3">
+                    <a href="# ">
+                        <img alt="Placeholder " class="block h-auto w-full " src="./img/210-600x400.jpg ">
                     </a>
-                    <div class="flex justify-content-end relative people">
-                        <img alt="Placeholder" class="block rounded-full border-white border-2 shadow" src="https://picsum.photos/50/50/?people=3">
+                    <div class="flex justify-content-end relative people ">
+                        <img alt="Placeholder " class="block rounded-full border-white border-2 shadow " src="https://picsum.photos/50/50/?people=3 ">
                     </div>
-                    <header class="px-6 pb-4 -mt-10">
+                    <header class="px-6 pb-4 -mt-10 ">
                         <!-- start star -->
                         <span class="star text-yellow-500 text-xs ">
-                            <i class="fa fa-star fa-1x"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star text-gray-300"></i>
-                            <span class="tracking-wider text-xs text-gray-500">(12) </span>
+                            <i class="fa fa-star fa-1x "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star text-gray-300 "></i>
+                            <span class="tracking-wider text-xs text-gray-500 ">(12) </span>
                         </span>
-                        <div class="text-lg text-gray-800 font-semibold  mt-2 mb-3">
+                        <div class="text-lg text-gray-800 font-semibold mt-2 mb-3 ">
                             冰島
                         </div>
-                        <p class="text-gray-600 text-sm mt-2">
+                        <p class="text-gray-600 text-sm mt-2 ">
                             辛格維利爾 海克拉山 蘭德納曼卡 黃金圈
                         </p>
                     </header>
-                    <div class="px-6 pb-4">
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2 tracking-wide">吃貨</span>
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2 ">秘境</span>
-                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-semibold text-white">冒險</span>
+                    <div class="px-6 pb-4 ">
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white mr-2 tracking-wide ">吃貨</span>
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white mr-2 ">秘境</span>
+                        <span class="inline-block bg-blue-400 rounded-full px-2 py-1 text-xs font-normal text-white ">冒險</span>
                     </div>
 
                     <footer class="flex items-center justify-between leading-none px-6 py-4 ">
-                        <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <a class="flex items-center no-underline hover:underline text-black " href="# ">
 
-                            <p class=" font-semibold text-md">
+                            <p class=" font-semibold text-md ">
                                 Author Name
                             </p>
 
@@ -366,7 +383,7 @@
 
                         <!-- end star -->
 
-                        <span class=" flex items-center text-lg text-blue-500">1,000 <i class="fa fa-coin"></i></span>
+                        <span class=" flex items-center text-lg text-blue-500 ">1,000 <i class="fa fa-coin "></i></span>
 
 
                     </footer>
@@ -381,135 +398,133 @@
 
     <!-- 網站特色 -->
 
-    <section class="bg-chiaki-blue pb-12">
+    <section class="bg-chiaki-blue pt-24 ">
         <div class="w-full mb-5 ">
-            <div class=" mx-auto bg-blue-200 border-4 border-white w-20  h-20 my-0 py-0 rounded-full flex items-center">
-                <img src="./img/section03.png" alt="">
+            <div class=" mx-auto bg-blue-200 border-4 border-white w-20 h-20 my-0 py-0 rounded-full flex items-center ">
+                <img src="./img/section03.png " alt=" ">
             </div>
         </div>
-        <div class="container  mx-auto flex max-w-6xl flex-wrap  pb-12">
-            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-blue-600">
+        <div class="container mx-auto flex max-w-7xl flex-wrap pb-12 ">
+            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-blue-600 ">
                 Feature</h1>
-            <div class="w-full mb-5">
-                <p class="leading-tight text-base text-center  tracking-widest text-gray-700 relative heading-sub">
+            <div class="w-full mb-5 ">
+                <p class="leading-tight text-base text-center tracking-widest text-gray-700 relative heading-sub ">
                     打造您的完美旅行 </p>
 
             </div>
 
-
-
-            <div class="w-full md:w-1/3 px-4 flex flex-col   items-center mt-4">
-                <div class="rounded-lg bg-white w-full    shadow-xl" style="height: 150px;">
-                    <h4 class="text-md uppercase text-gray-800 font-bold mt-10">為什麼選擇尋旅？</h4>
-                    <p class="text-base text-gray-600 mt-2">擁有各路旅遊大師精選秘境景點 不用透過旅行社花大錢 只要小額購買旅行規劃師時間 也可以小資玩全球，省時又簡單！
-                    </p>
+            <div class="mt-12 sm:flex items-start justify-between sm:-mx-2 ">
+                <div class="w-full bg-white rounded-lg shadow-lg py-8 px-4 sm:w-1/3 sm:mx-2 lg:mx-6 ">
+                    <div class="h-24 ">
+                        <img src="./img/icon-home-1.svg " alt=" " class="mx-auto ">
+                    </div>
+                    <h4 class="text-center text-xl text-gray-800 font-bold mt-10 ">為什麼選擇尋旅？</h4>
+                    <p class=" text-base text-gray-600 mt-2 leading-loose ">擁有各路旅遊大師精選秘境景點 不用透過旅行社花大錢 只要小額購買旅行規劃師時間 也可以小資玩全球，省時又簡單！</p>
                 </div>
 
-            </div>
-            <div class="w-full md:w-1/3 px-4 flex  flex-col   items-center mt-4">
-                <div class="rounded-lg bg-white w-full    shadow-xl" style="height: 150px;">
-                    <h4 class="text-md uppercase text-gray-800 font-bold mt-10">嚴格謹慎的規劃師篩選</h4>
-                    <p class="text-base text-gray-600 mt-2">成為旅行大師們可不是說說而已 尋旅上的每個規劃師都是透過嚴謹的內部審核 才能提供好玩又有趣的旅行計劃
-                    </p>
+                <div class="w-full bg-white rounded-lg shadow-lg py-8 px-4 mt-6 sm:mt-0 sm:w-1/3 sm:mx-2 lg:mx-6 ">
+                    <div class="h-24 ">
+                        <img src="./img/icon-home-2.svg " alt=" " class="mx-auto ">
+                    </div>
+                    <h4 class="text-center text-xl text-gray-800 font-bold mt-10 ">嚴格謹慎的規劃師篩選</h4>
+                    <p class="text-base text-gray-600 mt-2 leading-loose ">成為旅行大師們可不是說說而已 尋旅上的每個規劃師都是透過嚴謹的內部審核 才能提供好玩又有趣的旅行計劃</p>
                 </div>
 
-            </div>
-            <div class="w-full md:w-1/3 px-4 flex  flex-col   items-center mt-4">
-                <div class="rounded-lg bg-white w-full    shadow-xl" style="height: 150px;">
-                    <h4 class="text-md uppercase text-gray-800 font-bold mt-10">小額費用享用完善服務</h4>
-                    <p class="text-base text-gray-600 mt-2">成為旅行大師們可不是說說而已 尋旅上的每個規劃師都是透過嚴謹的內部審核 才能提供好玩又有趣的旅行計劃
+                <div class="w-full bg-white rounded-lg shadow-lg py-8 px-4 mt-6 sm:mt-0 sm:w-1/3 sm:mx-2 lg:mx-6 ">
+                    <div class="h-24 ">
+                        <img src="./img/icon-home-3.svg " alt=" " class="mx-auto ">
+                    </div>
+                    <h4 class="text-center text-xl text-gray-800 font-bold mt-10 ">小額費用享用完善服務</h4>
+                    <p class="text-base text-gray-600 mt-2 leading-loose leading-loose ">尋旅不只提供專屬你的規劃師服務 也能找尋最適合您的交通規劃與住宿， 讓旅行規劃師幫您完善打理您的旅途
                     </p>
                 </div>
-
             </div>
-
-
-
-
-
-
         </div>
 
     </section>
 
-    <div class="relative -mt-12  lg:-mt-10 pb-12">
+    <div class="relative -mt-12 lg:-mt-10 pb-12 ">
 
-        <svg id="life-bg-bottom" viewBox="0 0 3000 210" preserveAspectRatio="none">
+        <svg id="life-bg-bottom " viewBox="0 0 3000 210 " preserveAspectRatio="none ">
             <path
-                d="M3000 0H0v149c7-.3 14.7 0 23.1 1.1 60.3 8 94.4 48.7 161.6 50.8 171.8 5.3 192-70.9 304-70.5 116.5.5 187.2 76.4 401 79.5 155.3 2.2 146.8-43.7 286-52 115.5 7.8 132.2 49.8 300.5 49.8 83.4 0 172.2-43.8 328.5-43.8 106 0 155.3 43 254.1 43 98.8 0 196.3-81.2 279-110 110-38.3 231.4 46.2 317.9 43 66.8-2.5 104.2-27.9 178-26 85.4 2.3 106.9 54.7 166.4 76.6V0z">
+                d="M3000 0H0v149c7-.3 14.7 0 23.1 1.1 60.3 8 94.4 48.7 161.6 50.8 171.8 5.3 192-70.9 304-70.5 116.5.5 187.2 76.4 401 79.5 155.3 2.2 146.8-43.7 286-52 115.5 7.8 132.2 49.8 300.5 49.8 83.4 0 172.2-43.8 328.5-43.8 106 0 155.3 43 254.1 43
+                    98.8 0 196.3-81.2 279-110 110-38.3 231.4 46.2 317.9 43 66.8-2.5 104.2-27.9 178-26 85.4 2.3 106.9 54.7 166.4 76.6V0z ">
             </path>
         </svg>
     </div>
 
     <!-- 許願池 -->
-    <section class="gradient-blue">
-        <div class="w-full mb-5  mt-2">
-            <div class=" mx-auto bg-blue-200 border-4 border-white w-20  h-20 my-0 py-0 rounded-full flex items-center">
-                <img src="./img/section04.png" alt="">
+    <section class="gradient-blue ">
+        <div class="w-full mb-5 mt-2 ">
+            <div class=" mx-auto bg-blue-200 border-4 border-white w-20 h-20 my-0 py-0 rounded-full flex items-center ">
+                <img src="./img/section04.png " alt=" ">
             </div>
         </div>
-        <div class="container  mx-auto flex max-w-6xl flex-wrap  pb-12">
-            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-100">
+        <div class="container mx-auto flex max-w-7xl flex-wrap pb-12 ">
+            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-100 ">
                 Wishing board</h1>
-            <div class="w-full mb-5">
-                <p class="leading-tight text-base text-center  tracking-widest text-gray-100 relative heading-sub">
+            <div class="w-full mb-5 ">
+                <p class="leading-tight text-base text-center tracking-widest text-gray-100 relative heading-sub ">
                     許下理想行程 </p>
 
             </div>
 
-            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3">
-                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition">
+            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3 ">
+                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition ">
                     <div class="p-6 flex flex-col justify-between ">
-                        <div class="flex items-center">
-                            <div class="flex items-center  ">
-                                <img class="border-gray-500  shadow border-2 w-10 h-10 rounded-full mr-3 flex-1" src="https://picsum.photos/50/50/?people=4" alt="people">
+                        <div class="flex items-center ">
+                            <div class="flex items-center ">
+                                <img class="border-gray-500 shadow border-2 w-10 h-10 rounded-full mr-3 flex-1 " src="https://picsum.photos/50/50/?people=4 " alt="people ">
                             </div>
 
-                            <span class="font-medium text-gray-600  font-bold leading-normal ">Joanna Wu</span>
+                            <span class="font-medium text-gray-600 font-bold leading-normal ">Joanna Wu</span>
 
                         </div>
-                        <p class="inline-flex items-center py-4">
-                            <span class="text-gray-600 text-sm"> 我想去 荷蘭 吃好吃的美食
+                        <p class="inline-flex items-center py-4 ">
+                            <span class="text-gray-600 text-sm "> 我想去 荷蘭 吃好吃的美食
                                 並可以去做木鞋</span>
                         </p>
 
-                        <div class="flex items-center justify-end py-2">
+                        <div class="flex items-center justify-end py-2 ">
 
-                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
                                         <g>
                                             <path
-                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506
+                    1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532
+                    0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z ">
                                             </path>
                                         </g>
                                     </svg>
                                 </a>
-                                <span class="ml-0">2</span>
+                                <span class="ml-0 ">2</span>
                             </div>
 
 
 
-                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
                                         <g>
                                             <path
-                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037
+                    13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z ">
                                             </path>
                                         </g>
                                     </svg>
                                 </a>
-                                <span class="ml-1">0</span>
+                                <span class="ml-1 ">0</span>
                             </div>
 
 
-                            <div class="text-gray-600 flex hover:text-red-500 items-center  justify-content-end mx-2">
-                                <a href="#" class="w-4 h-4 hover:bg-gray-300  rounded-full flex items-center justify-center hover:text-gray-500">
+                            <div class="text-gray-600 flex hover:text-red-500 items-center justify-content-end mx-2 ">
+                                <a href="# " class="w-4 h-4 hover:bg-gray-300 rounded-full flex items-center justify-center hover:text-gray-500 ">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-4 h-4 fill-current stroke-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " class="w-4 h-4 fill-current stroke-1 ">
                                         <path
-                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z" />
+                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z " />
                                     </svg>
                                 </a>
 
@@ -518,121 +533,62 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3">
-                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition">
+            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3 ">
+                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition ">
                     <div class="p-6 flex flex-col justify-between ">
-                        <div class="flex items-center">
-                            <div class="flex items-center  ">
-                                <img class="border-gray-500  shadow border-2 w-10 h-10 rounded-full mr-3 flex-1" src="https://picsum.photos/50/50/?people=5" alt="people">
+                        <div class="flex items-center ">
+                            <div class="flex items-center ">
+                                <img class="border-gray-500 shadow border-2 w-10 h-10 rounded-full mr-3 flex-1 " src="https://picsum.photos/50/50/?people=5 " alt="people ">
                             </div>
 
-                            <span class="font-medium text-gray-600  font-bold leading-normal ">Joanna Wu</span>
+                            <span class="font-medium text-gray-600 font-bold leading-normal ">Joanna Wu</span>
 
                         </div>
-                        <p class="inline-flex items-center py-4">
-                            <span class="text-gray-600 text-sm"> 我想去 荷蘭 吃好吃的美食
+                        <p class="inline-flex items-center py-4 ">
+                            <span class="text-gray-600 text-sm "> 我想去 荷蘭 吃好吃的美食
                                 並可以去做木鞋</span>
                         </p>
 
-                        <div class="flex items-center justify-end py-2">
+                        <div class="flex items-center justify-end py-2 ">
 
-                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
                                         <g>
                                             <path
-                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506
+                    1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532
+                    0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z ">
                                             </path>
                                         </g>
                                     </svg>
                                 </a>
-                                <span class="ml-0">2</span>
+                                <span class="ml-0 ">2</span>
                             </div>
 
 
 
-                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
                                         <g>
                                             <path
-                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037
+                    13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z ">
                                             </path>
                                         </g>
                                     </svg>
                                 </a>
-                                <span class="ml-1">0</span>
+                                <span class="ml-1 ">0</span>
                             </div>
 
 
-                            <div class="text-gray-600 flex hover:text-red-500 items-center  justify-content-end mx-2">
-                                <a href="#" class="w-4 h-4 hover:bg-gray-300  rounded-full flex items-center justify-center hover:text-gray-500">
+                            <div class="text-gray-600 flex hover:text-red-500 items-center justify-content-end mx-2 ">
+                                <a href="# " class="w-4 h-4 hover:bg-gray-300 rounded-full flex items-center justify-center hover:text-gray-500 ">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-4 h-4 fill-current stroke-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " class="w-4 h-4 fill-current stroke-1 ">
                                         <path
-                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z" />
-                                    </svg>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3">
-                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition">
-                    <div class="p-6 flex flex-col justify-between ">
-                        <div class="flex items-center">
-                            <div class="flex items-center  ">
-                                <img class="border-gray-500  shadow border-2 w-10 h-10 rounded-full mr-3 flex-1" src="https://picsum.photos/50/50/?people=6" alt="people">
-                            </div>
-
-                            <span class="font-medium text-gray-600  font-bold leading-normal ">Joanna Wu</span>
-
-                        </div>
-                        <p class="inline-flex items-center py-4">
-                            <span class="text-gray-600 text-sm"> 我想去 荷蘭 吃好吃的美食
-                                並可以去做木鞋</span>
-                        </p>
-
-                        <div class="flex items-center justify-end py-2">
-
-                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
-                                        <g>
-                                            <path
-                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </a>
-                                <span class="ml-0">2</span>
-                            </div>
-
-
-
-                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
-                                        <g>
-                                            <path
-                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </a>
-                                <span class="ml-1">0</span>
-                            </div>
-
-
-                            <div class="text-gray-600 flex hover:text-red-500 items-center  justify-content-end mx-2">
-                                <a href="#" class="w-4 h-4 hover:bg-gray-300  rounded-full flex items-center justify-center hover:text-gray-500">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-4 h-4 fill-current stroke-1">
-                                        <path
-                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z" />
+                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z " />
                                     </svg>
                                 </a>
 
@@ -642,59 +598,127 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3">
-                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition">
+            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3 ">
+                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition ">
                     <div class="p-6 flex flex-col justify-between ">
-                        <div class="flex items-center">
-                            <div class="flex items-center  ">
-                                <img class="border-gray-500  shadow border-2 w-10 h-10 rounded-full mr-3 flex-1" src="https://picsum.photos/50/50/?people=4" alt="people">
+                        <div class="flex items-center ">
+                            <div class="flex items-center ">
+                                <img class="border-gray-500 shadow border-2 w-10 h-10 rounded-full mr-3 flex-1 " src="https://picsum.photos/50/50/?people=6 " alt="people ">
                             </div>
 
-                            <span class="font-medium text-gray-600  font-bold leading-normal ">Joanna Wu</span>
+                            <span class="font-medium text-gray-600 font-bold leading-normal ">Joanna Wu</span>
 
                         </div>
-                        <p class="inline-flex items-center py-4">
-                            <span class="text-gray-600 text-sm"> 我想去 荷蘭 吃好吃的美食
+                        <p class="inline-flex items-center py-4 ">
+                            <span class="text-gray-600 text-sm "> 我想去 荷蘭 吃好吃的美食
                                 並可以去做木鞋</span>
                         </p>
 
-                        <div class="flex items-center justify-end py-2">
+                        <div class="flex items-center justify-end py-2 ">
 
-                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
                                         <g>
                                             <path
-                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506
+                    1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532
+                    0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z ">
                                             </path>
                                         </g>
                                     </svg>
                                 </a>
-                                <span class="ml-0">2</span>
+                                <span class="ml-0 ">2</span>
                             </div>
 
 
 
-                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2">
-                                <a href="#" class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500">
-                                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
                                         <g>
                                             <path
-                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037
+                    13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z ">
                                             </path>
                                         </g>
                                     </svg>
                                 </a>
-                                <span class="ml-1">0</span>
+                                <span class="ml-1 ">0</span>
                             </div>
 
 
-                            <div class="text-gray-600 flex hover:text-red-500 items-center  justify-content-end mx-2">
-                                <a href="#" class="w-4 h-4 hover:bg-gray-300  rounded-full flex items-center justify-center hover:text-gray-500">
+                            <div class="text-gray-600 flex hover:text-red-500 items-center justify-content-end mx-2 ">
+                                <a href="# " class="w-4 h-4 hover:bg-gray-300 rounded-full flex items-center justify-center hover:text-gray-500 ">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-4 h-4 fill-current stroke-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " class="w-4 h-4 fill-current stroke-1 ">
                                         <path
-                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z" />
+                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z " />
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col mb-8 mt-4 px-3 ">
+                <div class="overflow-hidden bg-white round-xll shadow sample hover:shadow-md hover:translateY-2px transition ">
+                    <div class="p-6 flex flex-col justify-between ">
+                        <div class="flex items-center ">
+                            <div class="flex items-center ">
+                                <img class="border-gray-500 shadow border-2 w-10 h-10 rounded-full mr-3 flex-1 " src="https://picsum.photos/50/50/?people=4 " alt="people ">
+                            </div>
+
+                            <span class="font-medium text-gray-600 font-bold leading-normal ">Joanna Wu</span>
+
+                        </div>
+                        <p class="inline-flex items-center py-4 ">
+                            <span class="text-gray-600 text-sm "> 我想去 荷蘭 吃好吃的美食
+                                並可以去做木鞋</span>
+                        </p>
+
+                        <div class="flex items-center justify-end py-2 ">
+
+                            <div class="text-gray-600 flex hover:text-blue-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-blue-200 rounded-full flex items-center justify-center hover:text-blue-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
+                                        <g>
+                                            <path
+                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506
+                    1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532
+                    0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z ">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <span class="ml-0 ">2</span>
+                            </div>
+
+
+
+                            <div class="text-gray-600 flex hover:text-red-500 items-center mr-2 ">
+                                <a href="# " class="w-8 h-8 hover:bg-red-200 rounded-full flex items-center justify-center hover:text-red-500 ">
+                                    <svg viewBox="0 0 24 24 " class="w-4 h-4 fill-current ">
+                                        <g>
+                                            <path
+                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037
+                    13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z ">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <span class="ml-1 ">0</span>
+                            </div>
+
+
+                            <div class="text-gray-600 flex hover:text-red-500 items-center justify-content-end mx-2 ">
+                                <a href="# " class="w-4 h-4 hover:bg-gray-300 rounded-full flex items-center justify-center hover:text-gray-500 ">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " class="w-4 h-4 fill-current stroke-1 ">
+                                        <path
+                                            d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v18l-8-4-8 4V2zm2 0v15l6-3 6 3V2H4z " />
                                     </svg>
                                 </a>
 
@@ -706,7 +730,7 @@
 
             <div class="py-5 mx-auto outline-none ">
 
-                <button class="bg-orange-500 outline-none hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
+                <button class="bg-orange-500 outline-none hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full ">
                     更多內容
                 </button>
             </div>
@@ -717,11 +741,11 @@
     </section>
     <!-- 成為旅行規劃師 -->
 
-    <section class="bg-white  py-8">
-        <div class="container max-w-5xl mx-auto m-8">
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div class="w-full sm:w-1/2  mt-6">
-                    <svg id="boat" class="w-full sm:h-64 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.44 148.62">
+    <section class="bg-white py-8 ">
+        <div class="flex-col-reverse lg:flex-row container max-w-7xl mx-auto my-8 ">
+            <div class="flex flex-wrap flex-col-reverse lg:flex-row ">
+                <div class=" lg:visible w-full sm:w-1/2 mt-6 ">
+                    <svg id="boat " class="max-xl sm:h-64 mx-auto " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 373.44 148.62 ">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -762,76 +786,76 @@
 
                             </style>
                         </defs>
-                        <title>boat</title>
-                        <g id="OBJECTS">
-                            <path class="cls-1"
-                                d="M311.82,76.27c2.39,9.36-14.94,17.21-23.37,17.21H50.85c-8.43,0-13.26-7.85-10.87-17.21L51.2,32.37c1.93-7.55,9.31-13.49,16.55-13.49h190.5c7.23,0,11.92,7.22,16.54,13.49C287.63,49.8,311.82,76.27,311.82,76.27Z" />
-                            <path class="cls-2"
-                                d="M304.28,67.86a32.09,32.09,0,0,1-10.1,2H41.6L40,76.27c-2.39,9.36,2.44,17.21,10.87,17.21h237.6c8.43,0,25.76-7.85,23.37-17.21C311.82,76.27,308.77,72.93,304.28,67.86Z" />
-                            <path class="cls-3"
-                                d="M65.14,123.06a4.68,4.68,0,0,0-6.39-1.74L36,134.31a4.53,4.53,0,0,0-1.35,1.18c.94.16,1.89.33,2.83.51a45.87,45.87,0,0,1,10.36,2.33l15.52-8.88A4.67,4.67,0,0,0,65.14,123.06Z" />
-                            <path class="cls-4"
-                                d="M7.35,77.05c10.37,19.2,11,45.77,52.71,62.86a2.27,2.27,0,0,1,.86-.17c15.62,0,31.18.26,46.35,3.37,1-.2,1.9-.38,2.86-.55,9.15-1.6,17.54,2.46,26.56,2.76,11.29.38,22.26-2,33.46-2.92s22,1.09,33.16.53c12-.59,23.91-2.43,35.91-2.66a99.28,99.28,0,0,1,16.18.59c2.48,0,5-.44,5.8-.44,14.92-.09,30.13-2.19,45.22-2.94,38.83-17.11,52.36-42.11,62.26-60.43Z" />
-                            <path class="cls-5"
-                                d="M345.51,110.84A128.55,128.55,0,0,0,365,83.8H10.56c3.62,8.48,6.57,17.88,12.35,27Z" />
-                            <path class="cls-5"
-                                d="M165.18,132.46c-51.05,0-98.4-5.52-137.45-14.93,6.76,8.2,16.64,16,32.32,22.38a2.32,2.32,0,0,1,.87-.17c15.62,0,31.18.26,46.35,3.37,1-.2,1.9-.38,2.86-.55,9.15-1.6,17.54,2.46,26.56,2.76,11.29.38,22.26-2,33.46-2.92s22,1.09,33.16.53c12-.59,23.91-2.43,35.91-2.66a99.28,99.28,0,0,1,16.18.59c2.48,0,5-.44,5.8-.44,14.92-.09,30.13-2.19,45.22-2.94C330,127.09,344.24,113.8,354,100.85,309.61,120.12,241.53,132.46,165.18,132.46Z" />
-                            <path class="cls-6" d="M272.15,28.77h-30.6L257.12,62.9s27.79,6.39,45.72,3.34Z" />
-                            <path class="cls-6" d="M41.69,68.53A190.23,190.23,0,0,0,66.51,65.6l9-31.83H50.84Z" />
-                            <path class="cls-6"
-                                d="M225.16,62.9s3.89,4.17,13.89,4.17c8.06,0,9.45-4.17,9.45-4.17L234.88,28.77h-21.4Z" />
-                            <path class="cls-6"
-                                d="M193.78,62.9s3.41,4.17,13.41,4.17c8.06,0,9.94-4.17,9.94-4.17l-9.66-34.13h-21.4Z" />
-                            <path class="cls-6"
-                                d="M160.75,62.9s2.86,4.17,12.86,4.17c8.06,0,10.49-4.17,10.49-4.17l-5.16-34.13h-21.4Z" />
-                            <path class="cls-6"
-                                d="M145.56,47.92a15.3,15.3,0,1,1-15.3-15.31A15.3,15.3,0,0,1,145.56,47.92Z" />
-                            <path class="cls-6"
-                                d="M101.51,47.92A10.67,10.67,0,1,1,90.85,37.25,10.66,10.66,0,0,1,101.51,47.92Z" />
-                            <polygon class="cls-7"
-                                points="356.09 104.08 15.26 104.08 7.35 77.05 373.44 77.05 356.09 104.08" />
-                            <polygon class="cls-8"
-                                points="11.31 90.56 15.26 104.08 356.09 104.08 364.77 90.56 11.31 90.56" />
-                            <g class="cls-9">
-                                <polygon class="cls-1"
-                                    points="250.17 30.91 248.37 30.91 245.97 33.31 246.54 34.54 250.17 30.91" />
-                                <path class="cls-1" d="M262.35,30.91h-6.13l-7.79,7.78,1.92,4.22Z" />
-                                <path class="cls-1" d="M281.62,43.71,281,42.9,262.12,61.74l1.24.23Z" />
-                                <path class="cls-1" d="M274.42,63.7l1.21.15L288,51.49l-.61-.75Z" />
-                                <path class="cls-1"
-                                    d="M282.31,64.53c3.08.24,6.23.4,9.32.4h0c2.55,0,4.93-.11,7.12-.31l-7.45-9.09Z" />
-                                <path class="cls-1" d="M254.6,52.22l2,4.47,19.58-19.58-2.93-3.57Z" />
-                                <path class="cls-1" d="M59.93,35.91H52.49L49.83,46Q54.89,41,59.93,35.91Z" />
-                                <path class="cls-1" d="M70.1,45.06l.76-2.7L47.19,66l2.1-.19Q59.75,55.51,70.1,45.06Z" />
-                                <path class="cls-1"
-                                    d="M65.67,60.74l2-7.21Q62,59.31,56.17,65.06c2.35-.31,4.4-.62,6-.88Z" />
-                                <path class="cls-1" d="M71.26,35.91H66L47.67,54.22l-1.89,7.17Z" />
-                                <path class="cls-1" d="M216.52,31l1.21,3.54,3.67-3.67h-4.75Z" />
-                                <polygon class="cls-1"
-                                    points="238.21 42.87 237.69 41.59 224.6 54.68 225.06 56.02 238.21 42.87" />
-                                <path class="cls-1"
-                                    d="M229.93,63.32l11.75-11.74-1.75-4.39L226.6,60.52l.4,1.16A11.91,11.91,0,0,0,229.93,63.32Z" />
-                                <path class="cls-1" d="M242.17,64.65a6.73,6.73,0,0,0,4-1.94l-.57-1.44Z" />
-                                <path class="cls-1" d="M230.55,30.91h-3.1l-8.18,8.18.79,2.31Z" />
-                                <polygon class="cls-1"
-                                    points="197 30.91 191.71 30.91 189.29 33.33 190.26 37.64 197 30.91" />
-                                <path class="cls-1"
-                                    d="M193.89,53.7l.87,3.85L209.28,43l-1-3.7Q201.05,46.52,193.89,53.7Z" />
-                                <path class="cls-1" d="M211.3,50.16l-.68-2.42L196.19,62.17a11,11,0,0,0,2,1.12Z" />
-                                <path class="cls-1"
-                                    d="M164.69,63.22l15-15L179,43.6,162.62,60l.19,2A8.43,8.43,0,0,0,164.69,63.22Z" />
-                                <path class="cls-1" d="M174.77,30.91h-9.21l-5.19,5.18.8,8.42Q168,37.7,174.77,30.91Z" />
-                                <path class="cls-1" d="M161.69,50l.41,4.43,16.12-16.12-.63-4.21Z" />
-                                <path class="cls-1"
-                                    d="M132,34.88a14.25,14.25,0,0,0-1.74-.13A13.18,13.18,0,0,0,117.1,47.92a12.5,12.5,0,0,0,.13,1.74Z" />
-                                <path class="cls-1" d="M129,61l.44.05,14-14a3.12,3.12,0,0,0-.05-.44Z" />
-                                <path class="cls-1" d="M137.71,58.76a13.24,13.24,0,0,0,3.4-3.4Z" />
-                                <path class="cls-1"
-                                    d="M121,57.24l18.6-18.6a13.37,13.37,0,0,0-3-2.27L118.71,54.22A13.21,13.21,0,0,0,121,57.24Z" />
-                                <path class="cls-1"
-                                    d="M85.17,54.26l12-12a8.54,8.54,0,0,0-4.27-2.59C89.47,43.1,86,46.55,82.58,50A8.57,8.57,0,0,0,85.17,54.26Z" />
-                                <path class="cls-1"
-                                    d="M92.81,56.21l6.33-6.33a8.48,8.48,0,0,0,.23-2,8.88,8.88,0,0,0-.16-1.65q-5,5-10,10a8.88,8.88,0,0,0,1.65.16A8.48,8.48,0,0,0,92.81,56.21Z" />
+                     
+                        <g id="OBJECTS ">
+                            <path class="cls-1 "
+                                d="M311.82,76.27c2.39,9.36-14.94,17.21-23.37,17.21H50.85c-8.43,0-13.26-7.85-10.87-17.21L51.2,32.37c1.93-7.55,9.31-13.49,16.55-13.49h190.5c7.23,0,11.92,7.22,16.54,13.49C287.63,49.8,311.82,76.27,311.82,76.27Z " />
+                            <path class="cls-2 "
+                                d="M304.28,67.86a32.09,32.09,0,0,1-10.1,2H41.6L40,76.27c-2.39,9.36,2.44,17.21,10.87,17.21h237.6c8.43,0,25.76-7.85,23.37-17.21C311.82,76.27,308.77,72.93,304.28,67.86Z " />
+                            <path class="cls-3 "
+                                d="M65.14,123.06a4.68,4.68,0,0,0-6.39-1.74L36,134.31a4.53,4.53,0,0,0-1.35,1.18c.94.16,1.89.33,2.83.51a45.87,45.87,0,0,1,10.36,2.33l15.52-8.88A4.67,4.67,0,0,0,65.14,123.06Z " />
+                            <path class="cls-4 "
+                                d="M7.35,77.05c10.37,19.2,11,45.77,52.71,62.86a2.27,2.27,0,0,1,.86-.17c15.62,0,31.18.26,46.35,3.37,1-.2,1.9-.38,2.86-.55,9.15-1.6,17.54,2.46,26.56,2.76,11.29.38,22.26-2,33.46-2.92s22,1.09,33.16.53c12-.59,23.91-2.43,35.91-2.66a99.28,99.28,0,0,1,16.18.59c2.48,0,5-.44,5.8-.44,14.92-.09,30.13-2.19,45.22-2.94,38.83-17.11,52.36-42.11,62.26-60.43Z " />
+                            <path class="cls-5 "
+                                d="M345.51,110.84A128.55,128.55,0,0,0,365,83.8H10.56c3.62,8.48,6.57,17.88,12.35,27Z " />
+                            <path class="cls-5 "
+                                d="M165.18,132.46c-51.05,0-98.4-5.52-137.45-14.93,6.76,8.2,16.64,16,32.32,22.38a2.32,2.32,0,0,1,.87-.17c15.62,0,31.18.26,46.35,3.37,1-.2,1.9-.38,2.86-.55,9.15-1.6,17.54,2.46,26.56,2.76,11.29.38,22.26-2,33.46-2.92s22,1.09,33.16.53c12-.59,23.91-2.43,35.91-2.66a99.28,99.28,0,0,1,16.18.59c2.48,0,5-.44,5.8-.44,14.92-.09,30.13-2.19,45.22-2.94C330,127.09,344.24,113.8,354,100.85,309.61,120.12,241.53,132.46,165.18,132.46Z " />
+                            <path class="cls-6 " d="M272.15,28.77h-30.6L257.12,62.9s27.79,6.39,45.72,3.34Z " />
+                            <path class="cls-6 " d="M41.69,68.53A190.23,190.23,0,0,0,66.51,65.6l9-31.83H50.84Z " />
+                            <path class="cls-6 "
+                                d="M225.16,62.9s3.89,4.17,13.89,4.17c8.06,0,9.45-4.17,9.45-4.17L234.88,28.77h-21.4Z " />
+                            <path class="cls-6 "
+                                d="M193.78,62.9s3.41,4.17,13.41,4.17c8.06,0,9.94-4.17,9.94-4.17l-9.66-34.13h-21.4Z " />
+                            <path class="cls-6 "
+                                d="M160.75,62.9s2.86,4.17,12.86,4.17c8.06,0,10.49-4.17,10.49-4.17l-5.16-34.13h-21.4Z " />
+                            <path class="cls-6 "
+                                d="M145.56,47.92a15.3,15.3,0,1,1-15.3-15.31A15.3,15.3,0,0,1,145.56,47.92Z " />
+                            <path class="cls-6 "
+                                d="M101.51,47.92A10.67,10.67,0,1,1,90.85,37.25,10.66,10.66,0,0,1,101.51,47.92Z " />
+                            <polygon class="cls-7 "
+                                points="356.09 104.08 15.26 104.08 7.35 77.05 373.44 77.05 356.09 104.08 " />
+                            <polygon class="cls-8 "
+                                points="11.31 90.56 15.26 104.08 356.09 104.08 364.77 90.56 11.31 90.56 " />
+                            <g class="cls-9 ">
+                                <polygon class="cls-1 "
+                                    points="250.17 30.91 248.37 30.91 245.97 33.31 246.54 34.54 250.17 30.91 " />
+                                <path class="cls-1 " d="M262.35,30.91h-6.13l-7.79,7.78,1.92,4.22Z " />
+                                <path class="cls-1 " d="M281.62,43.71,281,42.9,262.12,61.74l1.24.23Z " />
+                                <path class="cls-1 " d="M274.42,63.7l1.21.15L288,51.49l-.61-.75Z " />
+                                <path class="cls-1 "
+                                    d="M282.31,64.53c3.08.24,6.23.4,9.32.4h0c2.55,0,4.93-.11,7.12-.31l-7.45-9.09Z " />
+                                <path class="cls-1 " d="M254.6,52.22l2,4.47,19.58-19.58-2.93-3.57Z " />
+                                <path class="cls-1 " d="M59.93,35.91H52.49L49.83,46Q54.89,41,59.93,35.91Z " />
+                                <path class="cls-1 " d="M70.1,45.06l.76-2.7L47.19,66l2.1-.19Q59.75,55.51,70.1,45.06Z " />
+                                <path class="cls-1 "
+                                    d="M65.67,60.74l2-7.21Q62,59.31,56.17,65.06c2.35-.31,4.4-.62,6-.88Z " />
+                                <path class="cls-1 " d="M71.26,35.91H66L47.67,54.22l-1.89,7.17Z " />
+                                <path class="cls-1 " d="M216.52,31l1.21,3.54,3.67-3.67h-4.75Z " />
+                                <polygon class="cls-1 "
+                                    points="238.21 42.87 237.69 41.59 224.6 54.68 225.06 56.02 238.21 42.87 " />
+                                <path class="cls-1 "
+                                    d="M229.93,63.32l11.75-11.74-1.75-4.39L226.6,60.52l.4,1.16A11.91,11.91,0,0,0,229.93,63.32Z " />
+                                <path class="cls-1 " d="M242.17,64.65a6.73,6.73,0,0,0,4-1.94l-.57-1.44Z " />
+                                <path class="cls-1 " d="M230.55,30.91h-3.1l-8.18,8.18.79,2.31Z " />
+                                <polygon class="cls-1 "
+                                    points="197 30.91 191.71 30.91 189.29 33.33 190.26 37.64 197 30.91 " />
+                                <path class="cls-1 "
+                                    d="M193.89,53.7l.87,3.85L209.28,43l-1-3.7Q201.05,46.52,193.89,53.7Z " />
+                                <path class="cls-1 " d="M211.3,50.16l-.68-2.42L196.19,62.17a11,11,0,0,0,2,1.12Z " />
+                                <path class="cls-1 "
+                                    d="M164.69,63.22l15-15L179,43.6,162.62,60l.19,2A8.43,8.43,0,0,0,164.69,63.22Z " />
+                                <path class="cls-1 " d="M174.77,30.91h-9.21l-5.19,5.18.8,8.42Q168,37.7,174.77,30.91Z " />
+                                <path class="cls-1 " d="M161.69,50l.41,4.43,16.12-16.12-.63-4.21Z " />
+                                <path class="cls-1 "
+                                    d="M132,34.88a14.25,14.25,0,0,0-1.74-.13A13.18,13.18,0,0,0,117.1,47.92a12.5,12.5,0,0,0,.13,1.74Z " />
+                                <path class="cls-1 " d="M129,61l.44.05,14-14a3.12,3.12,0,0,0-.05-.44Z " />
+                                <path class="cls-1 " d="M137.71,58.76a13.24,13.24,0,0,0,3.4-3.4Z " />
+                                <path class="cls-1 "
+                                    d="M121,57.24l18.6-18.6a13.37,13.37,0,0,0-3-2.27L118.71,54.22A13.21,13.21,0,0,0,121,57.24Z " />
+                                <path class="cls-1 "
+                                    d="M85.17,54.26l12-12a8.54,8.54,0,0,0-4.27-2.59C89.47,43.1,86,46.55,82.58,50A8.57,8.57,0,0,0,85.17,54.26Z " />
+                                <path class="cls-1 "
+                                    d="M92.81,56.21l6.33-6.33a8.48,8.48,0,0,0,.23-2,8.88,8.88,0,0,0-.16-1.65q-5,5-10,10a8.88,8.88,0,0,0,1.65.16A8.48,8.48,0,0,0,92.81,56.21Z " />
                             </g>
                         </g>
                     </svg>
@@ -839,15 +863,15 @@
 
 
                 </div>
-                <div class="w-full sm:w-1/2  mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">如何成為旅行規劃師？</h3>
-                        <p class="text-gray-600 mb-8 text-base leading-loose">
+                <div class="w-full sm:w-1/2 mt-6 ">
+                    <div class="ml-10 ">
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 ">如何成為旅行規劃師？</h3>
+                        <p class="text-gray-600 mb-8 text-base leading-loose ">
                             想跟更多的人分享您的旅行感悟嗎?想通過智力服務獲取不菲的經濟收入嗎?想看到遊客旅行之後露出滿意的微笑嗎? 加入Find Trip 吧!
                         </p>
                         <div class=" outline-none ">
 
-                            <button class="bg-orange-500 outline-none hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
+                            <button class="bg-orange-500 outline-none hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full ">
                                 申請成為旅行規劃師
                             </button>
                         </div>
@@ -864,71 +888,66 @@
 
     <!--Footer-->
     <!-- 海浪特效 -->
-    <div class="relative -mt-12  lg:-mt-32">
-        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+    <div class="relative -mt-12 lg:-mt-40 ">
+        <svg class="editorial " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " viewBox="0 24 150 28 " preserveAspectRatio="none ">
             <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 
-   58-18 88-18s
-   58 18 88 18 
-   58-18 88-18 
-   58 18 88 18
-   v44h-352z" />
+                <path id="gentle-wave " d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z " />
             </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave" x="50" y="0" fill="#1983d4" />
-                <use xlink:href="#gentle-wave" x="50" y="3" fill="#1983d4" />
-                <use xlink:href="#gentle-wave" x="50" y="6" fill="#0a65c2" />
+            <g class="parallax ">
+                <use xlink:href="#gentle-wave " x="50 " y="0 " fill="#1983d4 " />
+                <use xlink:href="#gentle-wave " x="50 " y="3 " fill="#1983d4 " />
+                <use xlink:href="#gentle-wave " x="50 " y="6 " fill="#0a65c2 " />
             </g>
         </svg>
     </div>
-    <footer class="bg-blue-sea">
+    <footer class="bg-blue-sea ">
 
 
-        <div class="container mx-auto px-6 pt-10 pb-6">
-            <div class="flex flex-wrap">
+        <div class="container mx-auto px-6 pt-10 pb-6 ">
+            <div class="flex flex-wrap ">
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class="uppercase mb-6 font-bold text-3xl">LOGO</h5>
+                    <h5 class="uppercase mb-6 font-bold text-3xl ">LOGO</h5>
 
                 </div>
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class=" mb-6 font-bold text-md">服務須知</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">常見問題</a>
+                    <h5 class=" mb-6 font-bold text-md ">服務須知</h5>
+                    <ul class="mb-4 ">
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">常見問題</a>
                         </li>
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">付款方式</a>
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">付款方式</a>
                         </li>
                     </ul>
                 </div>
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class=" mb-6 font-bold text-md">給旅行家</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">關於尋旅</a>
+                    <h5 class=" mb-6 font-bold text-md ">給旅行家</h5>
+                    <ul class="mb-4 ">
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">關於尋旅</a>
                         </li>
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">Points 介紹</a>
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">Points 介紹</a>
                         </li>
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">官方部落格</a>
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">官方部落格</a>
                         </li>
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">會員好禮</a>
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">會員好禮</a>
                         </li>
                     </ul>
                 </div>
                 <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class=" mb-6 font-bold text-md">合作夥伴</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">部落客/攝影師合作計畫</a>
+                    <h5 class=" mb-6 font-bold text-md ">合作夥伴</h5>
+                    <ul class="mb-4 ">
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">部落客/攝影師合作計畫</a>
                         </li>
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">聯盟行銷</a>
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">聯盟行銷</a>
                         </li>
-                        <li class="mt-2">
-                            <a href="#" class=" text-gray-200 text-sm ">申請成為旅行規劃師</a>
+                        <li class="mt-2 ">
+                            <a href="# " class=" text-gray-200 text-sm ">申請成為旅行規劃師</a>
                         </li>
                     </ul>
                 </div>
@@ -936,11 +955,11 @@
         </div>
     </footer>
 
-    <div class="e-backtop-btn js-e-backtop-btn"> <i class="fas fa-arrow-up"></i><span>TOP </span></div>
+    <div class="e-backtop-btn js-e-backtop-btn "> <i class="fas fa-arrow-up "></i><span>TOP </span></div>
 </body>
-<script src="js/jquery-3.4.1.js">
+<script src="js/jquery-3.4.1.js ">
 </script>
-<script src="js/all.js">
+<script src="js/all.js ">
 </script>
 
 </html>

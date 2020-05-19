@@ -191,12 +191,18 @@
                                         </li>
 
                                         <li>會員專區 /</li>
-                                        <li> 訂單記錄</li>
+                                        <li> 儲值點數</li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <!-- 新增按鈕 -->
+                            <div class="mt-1  mb-3 flex justify-end">
+                                <button class="bg-orange-600 rounded px-5 py-2 text-white hover:bg-orange-400 cursor-pointer">
+                                      前往儲值 <i class="pl-1 fa fa-money-check"></i></button>
+                            </div>
                             <!-- 書籤表示旅行家和規劃師 -->
-                            <div class=" mb-10">
+                            <!-- <div class=" mb-10">
                                 <ul class="flex border-b">
                                     <li class="-mb-px mr-1">
                                         <a class=" inline-block  py-2 px-4  text-gray-500 font-normal" href="#">旅行家</a>
@@ -206,7 +212,7 @@
                                     </li>
 
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- 訂單資料 -->
                             <div class="flex-1 text-gray-700 text-left  mb-20">
                                 <div class="lg:flex ">
@@ -218,56 +224,32 @@
                                             <thead>
                                                 <tr class="whitespace-no-wrap">
                                                     <th class="px-5 py-3 border-b-2 border-gray-300 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
-                                                        編號</th>
+                                                        日期</th>
                                                     <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
-                                                        客戶名字</th>
+                                                        時間</th>
                                                     <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
-                                                        國家</th>
-                                                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
-                                                        訂購時間</th>
-                                                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
-                                                        訂單狀態</th>
-                                                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
-                                                        詳細內容</th>
+                                                        項目</th>
+
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="whitespace-no-wrap">
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">1</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">Adam</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">阿里里巴巴</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">2020.2.13</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">未確認</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">
-                                                        <span class="  relative inline-block px-4 py-1 font-normal text-white leading-tight">
-                            <span class="shadow absolute inset-0 bg-blue-500 rounded-full"></span>
-                                                        <span class="relative">查看</span>
-                                                        </span>
-                                                    </td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">2020.5.5</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">14:00</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">600 點數</td>
+
                                                 </tr>
                                                 <tr>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">1</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">Adam</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">不拉多</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">2020.2.13</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">委託中</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base"> <span class="  relative inline-block px-4 py-1 font-normal text-white leading-tight">
-                            <span class="shadow absolute inset-0 bg-blue-500 rounded-full"></span>
-                                                        <span class="relative">查看</span>
-                                                        </span>
-                                                    </td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">2020.5.5</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">14:00</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">600 點數</td>
+
                                                 </tr>
                                                 <tr>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">3</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">Chris</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">克布奇克多拉ｓ</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">2020.2.13</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">已完成</td>
-                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base"> <span class="  relative inline-block px-4 py-1 font-normal text-white leading-tight">
-                            <span class="shadow absolute inset-0 bg-blue-500 rounded-full"></span>
-                                                        <span class="relative">查看</span>
-                                                        </span>
-                                                    </td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">2020.5.5</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">14:00</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">600 點數</td>
+
                                                 </tr>
                                             </tbody>
                                         </table>

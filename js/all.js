@@ -9,14 +9,22 @@ $(document).ready(function() {
         // 導覽列按鈕 end
 
     // 固定導覽列
-    const setFixed = $('#header')
-    let menuTop = setFixed.offset().top
+    const setFixed = $('#header');
+    const setbutton = $('#navAction');
+    const setlogo = $('.toggleColour');
+    let menuTop = setFixed.height();
+    // setFixed.offset().top
 
     $(window).on('load scroll resize', function() {
             if ($(window).scrollTop() > menuTop) {
-                setFixed.addClass('is-fixtop')
+                setFixed.addClass('is-fixtop');
+                setbutton.addClass('bg-blue-500');
+                setlogo.addClass('text-blue-500');
+
             } else {
-                setFixed.removeClass('is-fixtop')
+                setFixed.removeClass('is-fixtop');
+                setbutton.removeClass('bg-blue-500');
+                setlogo.removeClass('text-blue-500');
             }
         })
         // 固定導覽列 end

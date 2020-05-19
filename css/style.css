@@ -1,8 +1,12 @@
 /* index.html */
 
 body {
-    font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
     font-family: 'ヒラギノ丸ゴ W6 JIS2004', 'ヒラギノ丸ゴ Std W6', 'Hiragino Maru Gothic Std W6', sans-serif;
+    font-family: 'Noto Sans TC', 'Source Sans Pro', 'Hiragino Maru Gothic Std W6', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.rightConent {
+    height: calc(100vh - 40px);
 }
 
 
@@ -14,6 +18,10 @@ body {
 
 
 /* 讓標題固定 的class */
+
+nav {
+    transition: all 0.3s;
+}
 
 .is-fixtop {
     position: fixed;
@@ -57,16 +65,28 @@ body {
 
 /*msgbox*/
 
-.msgbox:after {
+.msgbox:after,
+.msgbox-self:before {
     content: '';
     position: absolute;
-    top: 6px;
-    left: -8px;
     width: 0;
     height: 0;
-    border-style: solid;
     border-width: 10px 17.3px 10px 0;
-    border-color: transparent blue transparent transparent;
+    border-style: solid;
+}
+
+.msgbox:after {
+    top: 6px;
+    left: -16px;
+    border-color: transparent #90cdf4 transparent transparent;
+}
+
+.msgbox-self:before {
+    top: 6px;
+    right: -14px;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #bee3f8;
+    ;
 }
 
 .ellipsis {
@@ -233,6 +253,37 @@ body {
 }
 
 
+/*clouds*/
+
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 80%;
+    pointer-events: none;
+    overflow: hidden;
+    animation: animate calc(10s * var(--i)) linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
 /* product.page */
 
 .bg-blue-prod {
@@ -265,9 +316,44 @@ body {
 /* style="background-image: url(./img/bg001.png);" */
 
 .airplane {
-    height: 200px;
-    display: block;
+    /* height: 200px;
+    display: block; */
+    /* -webkit-animation: plainfly 20s linear infinite;
+    -o-animation: plainfly 20s linear infinite;
+    animation: plainfly 20s linear infinite; */
 }
+
+
+/* @keyframes plainfly {
+    0% {
+        left: -10%;
+        -webkit-transform: scale(.4);
+        -ms-transform: scale(.4);
+        -o-transform: scale(.4);
+        transform: scale(.4);
+    }
+    50% {
+        left: 110%;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    51% {
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: -10%;
+        -webkit-transform: scale(1.4) rotateY(180deg);
+        -ms-transform: scale(1.4) rotateY(180deg);
+        -o-transform: scale(1.4) rotateY(180deg);
+        transform: scale(1.4) rotateY(180deg);
+    }
+} */
 
 .airplane img {
     width: 350px;
@@ -275,6 +361,7 @@ body {
     top: 50%;
     z-index: 50;
     left: 57%;
+    overflow: hidden;
 }
 
 

@@ -8,8 +8,8 @@
     <meta name="keywords" content="Find Trip">
     <meta name="author" content="Find Trip">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./output.css"> -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./output.css">
     <link href="css/style.css?12" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <style>
@@ -26,7 +26,7 @@
 
                 <div class="pl-4 flex items-center">
                     <a class="toggleColour text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">Logo
-                </a>
+        </a>
 
 
                 </div>
@@ -34,11 +34,11 @@
                 <div class="block lg:hidden pr-4">
                     <!-- mobile -->
                     <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 hover:text-blue-100 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
                 </div>
                 <!-- desktop -->
                 <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
@@ -52,7 +52,7 @@
 
                     </ul>
                     <button id="navAction" class="hidden outline-none mx-auto lg:mx-0 hover:shadow-lg bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75"><i
-                        class="fas fa-user-astronaut"></i>登入</button>
+            class="fas fa-user-astronaut"></i>登入</button>
                     <!-- 登入化緣狀態 -->
                     <div class="flex items-center text-black-500">
 
@@ -67,8 +67,7 @@
         <!-- <div class="hero-member  h-10 lg:h-40 bg-cover  overflow-hidden ">
 
     </div> -->
-        <!--  -->
-
+        <!--會員簡介  -->
         <div class="lg:px-5  p-6  flex container  max-w-7xl  mx-auto  member flex flex-wrap  items-center  justify-around">
             <div class="lg:py-0 py-5 flex-col lg:flex-row  container max-w-7xl  bg-white  flex text-gray-500 rounded-lg shadow-xl items-center">
                 <div class="w-full lg:w-1/5 flex-1 flex justify-center">
@@ -117,7 +116,7 @@
         </div>
 
         <div class="bg-member ">
-            <div class="flex container  max-w-7xl  mx-auto  mt-10">
+            <div class="flex container  max-w-7xl  mx-auto">
                 <div class="w-full  flex flex-row flex-wrap justify-around">
                     <div class="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal -ml-6">
                         <p class="text-base font-bold py-4 lg:pb-6 text-gray-700 lg:hidden">menu</p>
@@ -183,222 +182,102 @@
                     <!-- left-col -->
                     <div class="lg:px-8 px-6 w-full lg:w-3/4  mt-0 lg:mt-0 text-gray-900 leading-normal  ">
 
-
-                        <div class=" my-2 ">
-                            <!-- 麵包屑 -->
+                        <!-- 麵包屑 -->
+                        <div class=" my-2  ">
                             <div class="flex max-w-6xl mx-auto ">
-                                <div class=" pb-2  lg:px-0 px-2 text-gray-600 text-sm">
+                                <div class=" py-2  lg:px-0 px-2 text-gray-600 text-sm">
                                     <ul class="list-inline inline-flex hover:underlines">
                                         <li class=""><i class="fa fa-home"> /</i>
                                         </li>
 
-                                        <li>帳戶設定</li>
-
+                                        <li>會員專區 /</li>
+                                        <li> 我的收藏</li>
                                     </ul>
                                 </div>
-
-
                             </div>
 
+
                             <!-- 書籤表示旅行家和規劃師 -->
-                            <div class=" mb-10">
+                            <!-- <div class=" mb-10">
                                 <ul class="flex border-b">
                                     <li class="-mb-px mr-1">
-                                        <a class=" inline-block border-b-2 border-teal-400  py-2 px-4 text-teal-400 font-semibold" href="#">旅行家</a>
+                                        <a class=" inline-block  py-2 px-4  text-gray-500 font-normal" href="#">旅行家</a>
                                     </li>
                                     <li class="mr-1">
-                                        <a class="  inline-block py-2 px-4 text-gray-500 hover:text-blue-800 font-normal" href="#">規劃師</a>
+                                        <a class="  inline-block   border-teal-400 border-b-2 py-2 px-4 text-teal-400 hover:text-blue-800 font-semibold " href="#">規劃師</a>
                                     </li>
 
                                 </ul>
-                            </div>
-
-                            <div class="flex-1 text-gray-700 text-left bg-white  py-5 my-2 rounded-lg shadow-lg mb-5">
-                                <div class="lg:flex px-8">
-                                    <div class="w-full lg:w-1/5 flex-1 flex  flex-col justify-center items-center">
-                                        <div class=" border-solid border-4 border-gray-600 w-40 h-40 rounded-full overflow-hidden flex-shrink-0 mx-auto sm:m-0 bg-blue-100">
-                                            <img src="./img/man001.svg" class="w-40 h-40 p-5" alt="">
-                                        </div>
-
-                                        <button class="my-4 bg-blue-500 border border-blue-500 hover:bg-transparent hover:shadow-xl hover:text-blue-500 text-white font-thin  py-1 px-3 rounded-full lg:ml-4 ml-0  text-sm shadow-md">更換
-                                        <i class="fa fa-upload"></i></button>
-                                    </div>
-                                    <div class="w-full lg:w-4/5">
-                                        <div class="sm:pl-6 sm:pt-4 flex-1  text-gray-800">
-                                            <div class="mx-auto max-w-xl ">
-                                                <div class="flex flex-wrap md:w-auto w-full mb-0  lg:flex-col justify-center">
-                                                    <div class="md:w-full mb-3">
-                                                        <label class="block  tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        名字：
-                                                    </label>
-                                                        <input class="text-md block px-3 py-2 rounded-lg w-full
-                                     bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" type="text" placeholder="Chiakilalala">
-                                                    </div>
-                                                    <div class="md:w-full mb-3">
-                                                        <label class="block tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        密碼：
-                                                    </label>
-                                                        <input type="password" class="text-md block px-3 py-2 rounded-lg w-full
-                                                bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" placeholder="12334444">
-                                                    </div>
-                                                    <div class="md:w-full mb-3">
-                                                        <label class="block tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        FB 帳號網址：
-                                                    </label>
-                                                        <input class="text-md block px-3 py-2 rounded-lg w-full
-                                                bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" placeholder="https://www.facebook.com/自己帳號">
-                                                    </div>
-                                                    <div class="md:w-full mb-3">
-                                                        <label class="block tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        推特 帳號網址：
-                                                    </label>
-                                                        <input class="text-md block px-3 py-2 rounded-lg w-full
-                                              bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" placeholder="https://www.facebook.com/自己帳號">
-                                                    </div>
+                            </div> -->
+                            <!-- 訂單資料 -->
+                            <div class="flex-1 text-gray-700 text-left  mb-20 mt-10">
+                                <div class="lg:flex ">
 
 
+                                    <!-- 書籤 -->
+                                    <div class=" min-w-full shadow-md rounded-lg block w-full overflow-x-auto">
+                                        <table class="border-collapse  table-auto w-full leading-normal  text-left">
+                                            <thead>
+                                                <tr class="whitespace-no-wrap">
+                                                    <th class="px-5 py-3 border-b-2 border-gray-300 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
+                                                        用戶</th>
 
+                                                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
+                                                        愛心數</th>
+                                                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
+                                                        留言數</th>
+                                                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-300 text-left text-base font-semibold text-gray-700 tracking-wider">
+                                                        訊息內容</th>
 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="whitespace-no-wrap">
 
-                                                    <div class="md:w-full mb-3 ">
-                                                        <label class="block uppercase tracking-wide text-grey-darker text-base  font-bold mb-2" for="grid-first-name">
-                                                        E-mail 網址：
-                                                    </label>
-                                                        <input placeholder="2051sss02@gmail.com" type="text" class="text-md block px-3 py-2 rounded-lg w-full
-               bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
-
-                                                    </div>
-
-                                                    <div class="md:w-full mb-3 ">
-                                                        <label class="block uppercase tracking-wide text-grey-darker text-base  font-bold mb-2" for="grid-first-name">
-                                                        聯絡電話：
-                                                    </label>
-                                                        <input placeholder="930057001" type="text" class="text-md block px-3 py-2 rounded-lg w-full
-             bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
-
-                                                    </div>
-
-                                                    <div class="md:w-full mb-3 ">
-                                                        <label class="block  tracking-wide text-grey-darker text-base  font-bold mb-2" for="grid-first-name">
-                                                        一句話的介紹自己:
-                                                    </label>
-                                                        <input placeholder="一個無憂無慮的人 一句話的簡介物長不短" type="text" class="text-md block px-3 py-2 rounded-lg w-full
-                                      bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
-                                                    </div>
-                                                    <div class="flex sm:w-auto w-full sm:justify-start mb-0 lg:mb-3 justify-center items-center ">
-
-                                                        <div class=" lg:mr-4  mr-0 tracking-wider flex items-center"><span class="text-grey-darker ">點數：1000 </span><img src="./img/coin.png" class="w-8 h-8 mr-2" alt="" srcset="">
-                                                        </div>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">阿里里巴巴</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-xl font-semibold">12</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-xl font-semibold">0</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">
                                                         <span class="  relative inline-block px-4 py-1 font-normal text-white leading-tight">
-                                                        <span
-                                                            class="shadow absolute inset-0 bg-blue-500 hover:bg-blue-300 rounded-full"></span>
-                                                        <span class="relative">儲值 <i
-                                                                class="fa fa-dollar-sign"></i></span>
+                          <span class="shadow absolute inset-0 bg-blue-500 rounded-full"></span>
+                                                        <span class="relative">查看</span>
                                                         </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
 
-                                                    </div>
-                                                    <div class="flex sm:w-auto w-full  mb-0 lg:mb-3 lg:mt-0 lg:justify-end items-center justify-center mt-4">
-                                                        <button class="bg-gray-500 mb-4 hover:bg-blue-light text-white font-bold py-2 px-4 
-                                                hover:bg-gray-400 rounded">儲存</button>
-                                                    </div>
-                                                </div>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">不拉多</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-xl font-semibold">1</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-xl font-semibold">0</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base"> <span class="  relative inline-block px-4 py-1 font-normal text-white leading-tight">
+                          <span class="shadow absolute inset-0 bg-blue-500 rounded-full"></span>
+                                                        <span class="relative">查看</span>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
 
-
-                                            </div>
-
-                                        </div>
-
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base">克布奇克多拉ｓ</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-xl font-semibold">13</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-xl font-semibold">0</td>
+                                                    <td class="px-5 py-3 border-b border-gray-200 bg-white text-base"> <span class="  relative inline-block px-4 py-1 font-normal text-white leading-tight">
+                          <span class="shadow absolute inset-0 bg-blue-500 rounded-full"></span>
+                                                        <span class="relative">查看</span>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
 
-
                             </div>
-                            <div class="flex-1 text-gray-700 text-left bg-white  py-5 my-2 rounded-lg shadow-lg mb-5">
-                                <div class="lg:flex px-8">
-                                    <div class="w-full lg:w-1/5 flex-1 flex  flex-col justify-center items-center">
-                                        <div class=" border-solid border-4 border-gray-600 w-40 h-40 rounded-full overflow-hidden flex-shrink-0 mx-auto sm:m-0 bg-blue-100">
-                                            <img src="./img/user001.png" class="w-40 h-40 p-5" alt="">
-                                        </div>
-
-                                        <button class="my-4 bg-blue-500 border border-blue-500 hover:bg-transparent hover:shadow-xl hover:text-blue-500 text-white font-thin  py-1 px-3 rounded-full lg:ml-4 ml-0  text-sm shadow-md">更換
-                                        <i class="fa fa-upload"></i></button>
-                                    </div>
-                                    <div class="w-full lg:w-4/5">
-                                        <div class="sm:pl-6 sm:pt-4 flex-1  text-gray-800">
-                                            <div class="mx-auto max-w-xl ">
-                                                <div class="flex flex-wrap md:w-auto w-full mb-0 flex-row  lg:flex-col justify-center">
-                                                    <div class="mb-3">
-                                                        <label class="block  tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        名字：
-                                                    </label>
-                                                        <input class="text-md block px-3 py-2 rounded-lg w-full
-                                       bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" type="text" placeholder="Chiakilalala">
-                                                    </div>
-                                                    <div class="md:w-full mb-3">
-                                                        <label class="block tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        FB 帳號網址：
-                                                    </label>
-                                                        <input class="text-md block px-3 py-2 rounded-lg w-full
-                                                  bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" placeholder="https://www.facebook.com/自己帳號">
-                                                    </div>
-                                                    <div class="md:w-full mb-3">
-                                                        <label class="block tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        推特 帳號網址：
-                                                    </label>
-                                                        <input class="text-md block px-3 py-2 rounded-lg w-full
-                                                bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" placeholder="https://www.facebook.com/自己帳號">
-                                                    </div>
-
-
-
-
-
-                                                    <div class="md:w-full mb-3 ">
-                                                        <label class="block uppercase tracking-wide text-grey-darker text-base  font-bold mb-2" for="grid-first-name">
-                                                        E-mail 網址：
-                                                    </label>
-                                                        <input placeholder="2051sss02@gmail.com" type="text" class="text-md block px-3 py-2 rounded-lg w-full
-                 bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
-
-                                                    </div>
-
-                                                    <div class="md:w-full mb-3 ">
-                                                        <label class="block uppercase tracking-wide text-grey-darker text-base  font-bold mb-2" for="grid-first-name">
-                                                        聯絡電話：
-                                                    </label>
-                                                        <input placeholder="930057001" type="text" class="text-md block px-3 py-2 rounded-lg w-full
-               bg-white border border-gray-400 placeholder-gray-600 shadow-xs focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
-
-                                                    </div>
-
-                                                    <div class="md:w-full mb-3 ">
-                                                        <label class="block  tracking-wide text-grey-darker text-base  font-bold mb-2">
-                                                        關於自己的一段介紹:
-                                                    </label>
-                                                        <textarea placeholder="身而為人覺得很抱歉" class="border border-gray-400 w-full rounded-lg px-2 py-1 resize-none" rows="4"></textarea>
-                                                    </div>
-
-                                                    <div class="flex sm:w-auto w-full  mb-0 lg:mb-3 justify-end items-center ">
-                                                        <button class="bg-gray-500 mb-4 hover:bg-blue-light text-white font-bold py-2 px-4 
-                                                  hover:bg-gray-400 rounded">儲存</button>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
 
                         </div>
 
-                        <!-- 訂單資料 -->
+
+
+
 
 
                     </div>
@@ -408,37 +287,26 @@
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
     </div>
-
 
     <!--Footer-->
     <!-- 海浪特效 -->
     <div class="relative -mt-12  lg:-mt-22">
         <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 
    58-18 88-18s
    58 18 88 18 
    58-18 88-18 
    58 18 88 18
    v44h-352z" />
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave" x="50" y="0" fill="#1983d4" />
-                <use xlink:href="#gentle-wave" x="50" y="3" fill="#1983d4" />
-                <use xlink:href="#gentle-wave" x="50" y="6" fill="#0a65c2" />
-            </g>
-        </svg>
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="50" y="0" fill="#1983d4" />
+        <use xlink:href="#gentle-wave" x="50" y="3" fill="#1983d4" />
+        <use xlink:href="#gentle-wave" x="50" y="6" fill="#0a65c2" />
+      </g>
+    </svg>
     </div>
     <footer class="bg-blue-sea ">
 
