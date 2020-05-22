@@ -10,6 +10,39 @@ body {
 }
 
 
+/* *,
+*::after,
+*::before {
+    transition: all 0.25s ease-out;
+} */
+
+#mySvg {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50vh;
+    margin-bottom: 50vh;
+    overflow: visible;
+    transform: translateX(-50%);
+}
+
+#myPath {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.circle {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: -1rem;
+    left: -1rem;
+    border-radius: 50%;
+    background: yellow;
+}
+
+
 /*member*/
 
 .member {
@@ -19,17 +52,13 @@ body {
 
 /* 讓標題固定 的class */
 
-nav {
-    transition: all 0.3s;
-}
-
 .is-fixtop {
     position: fixed;
-    top: 0;
+    /* top: 0;
     right: 0;
-    left: 0;
+    left: 0; */
     z-index: 999;
-    background: #fff;
+    /* background: #fff; */
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
 }
 
@@ -268,7 +297,7 @@ nav {
 .clouds img {
     position: absolute;
     bottom: 0;
-    max-width: 80%;
+    max-width: 90%;
     pointer-events: none;
     overflow: hidden;
     animation: animate calc(10s * var(--i)) linear infinite;
@@ -291,20 +320,51 @@ nav {
 }
 
 
+/*logo*/
+
+.logo {
+    background-image: url(../img/logo_1.svg);
+}
+
+a.changeLogo {
+    background-image: url(../img/logo_blue.svg);
+}
+
+#header {
+    background: none;
+    transition: background 500ms ease;
+    -webkit-transition: background 500ms ease;
+}
+
+#header.is-fixtop {
+    transform: translateY(2px);
+    background: #fff;
+    transition: transform 500ms ease, background 900ms ease;
+    -webkit-transition: transform 500ms ease, background 900ms ease;
+}
+
+#header .w-full.container {
+    /* position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+
 /* banner 畫面 */
 
 .hero-bg {
     padding-bottom: 0%;
-    background: url(../img/bg002.png) center center no-repeat;
+    background: url(../img/bg001.png) no-repeat;
     background-size: cover;
     height: 100vh;
+    background-position: top bottom;
 }
 
 .h-112 {
     height: 23rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991.98px) {
     .hero-bg {
         padding-bottom: 0%;
         background: url(../img/bg002_mobile.png) center center no-repeat;
@@ -318,9 +378,32 @@ nav {
 .airplane {
     /* height: 200px;
     display: block; */
-    /* -webkit-animation: plainfly 20s linear infinite;
-    -o-animation: plainfly 20s linear infinite;
-    animation: plainfly 20s linear infinite; */
+    -webkit-animation: plane 10s linear infinite;
+    -o-animation: plane 10s linear infinite;
+    animation: plane 10s linear infinite;
+}
+
+@keyframes plane {
+    0% {
+        margin-top: 85px;
+    }
+    25% {
+        margin-top: 75px;
+    }
+    50% {
+        margin-top: 48px;
+    }
+    75% {
+        margin-top: 60px;
+    }
+    85% {
+        margin-top: 70px;
+        /* margin-left: 50%; */
+    }
+    100% {
+        margin-top: 75px;
+        /* margin-left: 50%; */
+    }
 }
 
 
@@ -490,6 +573,7 @@ svg#life-bg-bottom {
 } */
 
 .parallax>use {
+    transition: all 0.25s;
     animation: move-forever 12s linear infinite;
 }
 
@@ -691,6 +775,8 @@ svg#life-bg-bottom {
 .icon004 {
     background-position: -65px -64px;
 }
+
+@media (max-width: 991.98px) {}
 
 @media screen and (max-width: 768px) {
     .barcode {
